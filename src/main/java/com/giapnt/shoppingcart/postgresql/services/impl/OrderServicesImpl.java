@@ -2,8 +2,6 @@ package com.giapnt.shoppingcart.postgresql.services.impl;
 
 import com.giapnt.shoppingcart.postgresql.constant.Contants;
 import com.giapnt.shoppingcart.postgresql.mapper.OrdersMapper;
-import com.giapnt.shoppingcart.postgresql.mapper.OrdersMapper;
-import com.giapnt.shoppingcart.postgresql.model.Orders;
 import com.giapnt.shoppingcart.postgresql.model.Orders;
 import com.giapnt.shoppingcart.postgresql.services.OrderServices;
 import org.slf4j.Logger;
