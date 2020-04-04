@@ -1,22 +1,27 @@
 package com.giapnt.shoppingcart.postgresql.services;
 
+import com.giapnt.shoppingcart.postgresql.model.Suppliers;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.List;
+import java.util.Map;
 
 @Service
 @Transactional
 public interface SupplierServices {
 
-    List<Suppliers> findAllSupplier();
+    List<Suppliers> getAllListSuppliers();
 
-    Suppliers findBySupplierId();
+    List<Suppliers> getListSuppliersActive();
 
-    Map<Integer, Object> activeSupplier(Suppliers suppliers);
+    List<Suppliers> getListSuppliersDeactivate();
 
-    Map<Integer, Object> deactiveSupplier(Suppliers suppliers);
+    Suppliers getSuppliersById(long id);
 
-    Map<Integer, Object> addNewSupplier(Suppliers suppliers);
+    Map<Integer, Object> modifySuppliersByPrimaryKey(Suppliers suppliers);
 
-    Map<Integer, Object> removeSupplier(Suppliers suppliers);
+    Map<Integer, Object> addNewSuppliers(Suppliers suppliers);
 
+    Map<Integer, Object> removeSuppliers(Suppliers suppliers);
 }
