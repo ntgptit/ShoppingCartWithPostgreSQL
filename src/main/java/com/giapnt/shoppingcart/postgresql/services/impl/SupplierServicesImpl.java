@@ -1,11 +1,5 @@
 package com.giapnt.shoppingcart.postgresql.services.impl;
 
-import com.giapnt.shoppingcart.postgresql.mapper.SuppliersMapper;
-import com.giapnt.shoppingcart.postgresql.model.Suppliers;
-import com.giapnt.shoppingcart.postgresql.services.SupplierServices;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.*;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
