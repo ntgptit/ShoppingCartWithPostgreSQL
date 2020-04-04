@@ -16,38 +16,38 @@ DROP TABLE IF EXISTS users;
 
 /* Drop Sequences */
 
-DROP SEQUENCE IF EXISTS core_data.category_id_seq;
-DROP SEQUENCE IF EXISTS core_data.order_detail_id_seq;
-DROP SEQUENCE IF EXISTS core_data.order_id_seq;
-DROP SEQUENCE IF EXISTS core_data.payment_id_seq;
-DROP SEQUENCE IF EXISTS core_data.product_id_seq;
-DROP SEQUENCE IF EXISTS core_data.role_id_seq;
-DROP SEQUENCE IF EXISTS core_data.shipper_id_seq;
-DROP SEQUENCE IF EXISTS core_data.supplier_id_seq;
-DROP SEQUENCE IF EXISTS core_data.user_id_seq;
-DROP SEQUENCE IF EXISTS core_data.user_role_id_seq;
+DROP SEQUENCE IF EXISTS category_id_seq;
+DROP SEQUENCE IF EXISTS order_detail_id_seq;
+DROP SEQUENCE IF EXISTS order_id_seq;
+DROP SEQUENCE IF EXISTS payment_id_seq;
+DROP SEQUENCE IF EXISTS product_id_seq;
+DROP SEQUENCE IF EXISTS role_id_seq;
+DROP SEQUENCE IF EXISTS shipper_id_seq;
+DROP SEQUENCE IF EXISTS supplier_id_seq;
+DROP SEQUENCE IF EXISTS user_id_seq;
+DROP SEQUENCE IF EXISTS user_role_id_seq;
 
 
 
 
 /* Create Sequences */
 
-CREATE SEQUENCE core_data.category_id_seq INCREMENT 1 MINVALUE 1 START 10000;
-CREATE SEQUENCE core_data.order_detail_id_seq INCREMENT 1 MINVALUE 1 START 10000;
-CREATE SEQUENCE core_data.order_id_seq INCREMENT 1 MINVALUE 1 START 10000;
-CREATE SEQUENCE core_data.payment_id_seq INCREMENT 1 MINVALUE 1 START 10000;
-CREATE SEQUENCE core_data.product_id_seq INCREMENT 1 MINVALUE 1 START 10000;
-CREATE SEQUENCE core_data.role_id_seq INCREMENT 1 MINVALUE 1 START 10000;
-CREATE SEQUENCE core_data.shipper_id_seq INCREMENT 1 MINVALUE 1 START 10000;
-CREATE SEQUENCE core_data.supplier_id_seq INCREMENT 1 MINVALUE 1 START 10000;
-CREATE SEQUENCE core_data.user_id_seq INCREMENT 1 MINVALUE 1 START 10000;
-CREATE SEQUENCE core_data.user_role_id_seq INCREMENT 1 MINVALUE 1 START 10000;
+CREATE SEQUENCE category_id_seq INCREMENT 1 MINVALUE 1 START 10000;
+CREATE SEQUENCE order_detail_id_seq INCREMENT 1 MINVALUE 1 START 10000;
+CREATE SEQUENCE order_id_seq INCREMENT 1 MINVALUE 1 START 10000;
+CREATE SEQUENCE payment_id_seq INCREMENT 1 MINVALUE 1 START 10000;
+CREATE SEQUENCE product_id_seq INCREMENT 1 MINVALUE 1 START 10000;
+CREATE SEQUENCE role_id_seq INCREMENT 1 MINVALUE 1 START 10000;
+CREATE SEQUENCE shipper_id_seq INCREMENT 1 MINVALUE 1 START 10000;
+CREATE SEQUENCE supplier_id_seq INCREMENT 1 MINVALUE 1 START 10000;
+CREATE SEQUENCE user_id_seq INCREMENT 1 MINVALUE 1 START 10000;
+CREATE SEQUENCE user_role_id_seq INCREMENT 1 MINVALUE 1 START 10000;
 
 
 
 /* Create Tables */
 
-CREATE TABLE core_data.category
+CREATE TABLE category
 (
 	id bigint DEFAULT nextval('category_id_seq') NOT NULL UNIQUE,
 	name varchar NOT NULL UNIQUE,
@@ -62,7 +62,7 @@ CREATE TABLE core_data.category
 ) WITHOUT OIDS;
 
 
-CREATE TABLE core_data.orders
+CREATE TABLE orders
 (
 	id bigint DEFAULT nextval('order_id_seq') NOT NULL UNIQUE,
 	order_number varchar NOT NULL,
@@ -89,7 +89,7 @@ CREATE TABLE core_data.orders
 ) WITHOUT OIDS;
 
 
-CREATE TABLE core_data.order_details
+CREATE TABLE order_details
 (
 	id bigint DEFAULT nextval('order_detail_id_seq') NOT NULL UNIQUE,
 	order_number varchar,
@@ -113,7 +113,7 @@ CREATE TABLE core_data.order_details
 ) WITHOUT OIDS;
 
 
-CREATE TABLE core_data.payment
+CREATE TABLE payment
 (
 	id bigint DEFAULT nextval('payment_id_seq') NOT NULL UNIQUE,
 	type varchar NOT NULL,
@@ -126,7 +126,7 @@ CREATE TABLE core_data.payment
 ) WITHOUT OIDS;
 
 
-CREATE TABLE core_data.products
+CREATE TABLE products
 (
 	id bigint DEFAULT nextval('product_id_seq') NOT NULL UNIQUE,
 	sku bigint UNIQUE,
@@ -155,26 +155,28 @@ CREATE TABLE core_data.products
 	updated_by varchar,
 	created_timestamp timestamp,
 	updated_timestamp timestamp,
+	isActice bigint,
 	supplier_id bigint NOT NULL,
 	category_id bigint NOT NULL,
 	PRIMARY KEY (id)
 ) WITHOUT OIDS;
 
 
-CREATE TABLE core_data.role
+CREATE TABLE role
 (
 	id bigint DEFAULT nextval('role_id_seq') NOT NULL UNIQUE,
 	name varchar NOT NULL UNIQUE,
 	description varchar,
 	created_by varchar,
 	updated_by varchar,
+	isActive bigint,
 	created_timestamp timestamp,
 	updated_timestamp timestamp,
 	PRIMARY KEY (id)
 ) WITHOUT OIDS;
 
 
-CREATE TABLE core_data.shippers
+CREATE TABLE shippers
 (
 	id bigint DEFAULT nextval('shipper_id_seq') NOT NULL UNIQUE,
 	name varchar NOT NULL UNIQUE,
@@ -182,13 +184,14 @@ CREATE TABLE core_data.shippers
 	description varchar,
 	created_by varchar,
 	updated_by varchar,
+	isActive bigint,
 	created_timestamp timestamp,
 	updated_timestamp timestamp,
 	PRIMARY KEY (id)
 ) WITHOUT OIDS;
 
 
-CREATE TABLE core_data.suppliers
+CREATE TABLE suppliers
 (
 	id bigint DEFAULT nextval('supplier_id_seq') NOT NULL UNIQUE,
 	company_first_name varchar NOT NULL,
@@ -212,6 +215,7 @@ CREATE TABLE core_data.suppliers
 	current_order varchar,
 	customer_id int,
 	size_url int,
+	isActive bigint,
 	created_by varchar,
 	updated_by varchar,
 	created_timestamp timestamp,
@@ -220,7 +224,7 @@ CREATE TABLE core_data.suppliers
 ) WITHOUT OIDS;
 
 
-CREATE TABLE core_data.users
+CREATE TABLE users
 (
 	id bigint DEFAULT nextval('user_id_seq') NOT NULL UNIQUE,
 	first_name varchar,
@@ -250,6 +254,7 @@ CREATE TABLE core_data.users
 	ship_postal_code varchar,
 	ship_country varchar,
 	date_entered date,
+	isActive int,
 	created_by varchar,
 	updated_by varchar,
 	created_timestamp timestamp,
@@ -258,7 +263,7 @@ CREATE TABLE core_data.users
 ) WITHOUT OIDS;
 
 
-CREATE TABLE core_data.user_role
+CREATE TABLE user_role
 (
 	id bigint DEFAULT nextval('user_role_id_seq') NOT NULL UNIQUE,
 	created_by varchar,
@@ -274,73 +279,73 @@ CREATE TABLE core_data.user_role
 
 /* Create Foreign Keys */
 
-ALTER TABLE core_data.products
+ALTER TABLE products
 	ADD FOREIGN KEY (category_id)
-	REFERENCES core_data.category (id)
+	REFERENCES category (id)
 	ON UPDATE RESTRICT
 	ON DELETE RESTRICT
 ;
 
 
-ALTER TABLE core_data.order_details
+ALTER TABLE order_details
 	ADD FOREIGN KEY (order_id)
-	REFERENCES core_data.orders (id)
+	REFERENCES orders (id)
 	ON UPDATE RESTRICT
 	ON DELETE RESTRICT
 ;
 
 
-ALTER TABLE core_data.orders
+ALTER TABLE orders
 	ADD FOREIGN KEY (payment_id)
-	REFERENCES core_data.payment (id)
+	REFERENCES payment (id)
 	ON UPDATE RESTRICT
 	ON DELETE RESTRICT
 ;
 
 
-ALTER TABLE core_data.order_details
+ALTER TABLE order_details
 	ADD FOREIGN KEY (product_id)
-	REFERENCES core_data.products (id)
+	REFERENCES products (id)
 	ON UPDATE RESTRICT
 	ON DELETE RESTRICT
 ;
 
 
-ALTER TABLE core_data.user_role
+ALTER TABLE user_role
 	ADD FOREIGN KEY (role_id)
-	REFERENCES core_data.role (id)
+	REFERENCES role (id)
 	ON UPDATE RESTRICT
 	ON DELETE RESTRICT
 ;
 
 
-ALTER TABLE core_data.orders
+ALTER TABLE orders
 	ADD FOREIGN KEY (shipper_id)
-	REFERENCES core_data.shippers (id)
+	REFERENCES shippers (id)
 	ON UPDATE RESTRICT
 	ON DELETE RESTRICT
 ;
 
 
-ALTER TABLE core_data.products
+ALTER TABLE products
 	ADD FOREIGN KEY (supplier_id)
-	REFERENCES core_data.suppliers (id)
+	REFERENCES suppliers (id)
 	ON UPDATE RESTRICT
 	ON DELETE RESTRICT
 ;
 
 
-ALTER TABLE core_data.orders
+ALTER TABLE orders
 	ADD FOREIGN KEY (user_id)
-	REFERENCES core_data.users (id)
+	REFERENCES users (id)
 	ON UPDATE RESTRICT
 	ON DELETE RESTRICT
 ;
 
 
-ALTER TABLE core_data.user_role
+ALTER TABLE user_role
 	ADD FOREIGN KEY (user_id)
-	REFERENCES core_data.users (id)
+	REFERENCES users (id)
 	ON UPDATE RESTRICT
 	ON DELETE RESTRICT
 ;
