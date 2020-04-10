@@ -21,7 +21,10 @@ public interface SupplierServices {
 
     Map<Integer, Object> modifySuppliersByPrimaryKey(Suppliers suppliers);
 
+    Map<Integer, Object> updateCurrentStatusByPrimaryKey(Suppliers suppliers, int action);
+
     Map<Integer, Object> addNewSuppliers(Suppliers suppliers);
 
     Map<Integer, Object> removeSuppliers(Suppliers suppliers);
+
 }

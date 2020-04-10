@@ -31,23 +31,23 @@
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
 
-        <table schema="core_data" tableName="products" enableCountByExample="false" enableDeleteByExample="false"
+        <table schema="public" tableName="products" enableCountByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" enableUpdateByExample="false"/>
-        <table schema="core_data" tableName="category" enableCountByExample="false" enableDeleteByExample="false"
+        <table schema="public" tableName="category" enableCountByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" enableUpdateByExample="false"/>
-        <table schema="core_data" tableName="orders" enableCountByExample="false" enableDeleteByExample="false"
+        <table schema="public" tableName="orders" enableCountByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" enableUpdateByExample="false"/>
-        <table schema="core_data" tableName="payment" enableCountByExample="false" enableDeleteByExample="false"
+        <table schema="public" tableName="payment" enableCountByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" enableUpdateByExample="false"/>
-        <table schema="core_data" tableName="user_role" enableCountByExample="false" enableDeleteByExample="false"
+        <table schema="public" tableName="user_role" enableCountByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" enableUpdateByExample="false"/>
-        <table schema="core_data" tableName="role" enableCountByExample="false" enableDeleteByExample="false"
+        <table schema="public" tableName="role" enableCountByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" enableUpdateByExample="false"/>
-        <table schema="core_data" tableName="shippers" enableCountByExample="false" enableDeleteByExample="false"
+        <table schema="public" tableName="shippers" enableCountByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" enableUpdateByExample="false"/>
-        <table schema="core_data" tableName="suppliers" enableCountByExample="false" enableDeleteByExample="false"
+        <table schema="public" tableName="suppliers" enableCountByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" enableUpdateByExample="false"/>
-        <table schema="core_data" tableName="users" enableCountByExample="false" enableDeleteByExample="false"
+        <table schema="public" tableName="users" enableCountByExample="false" enableDeleteByExample="false"
                enableSelectByExample="false" enableUpdateByExample="false"/>
 
     </context>
