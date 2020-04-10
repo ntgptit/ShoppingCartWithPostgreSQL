@@ -4,14 +4,18 @@ import com.giapnt.shoppingcart.postgresql.constant.ContantsForBussines;
 import com.giapnt.shoppingcart.postgresql.mapper.SuppliersMapper;
 import com.giapnt.shoppingcart.postgresql.model.Suppliers;
 import com.giapnt.shoppingcart.postgresql.services.SupplierServices;
+import lombok.Data;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
+@Data
 @Service("SupplierServices")
 @Transactional
 public class SupplierServicesImpl implements SupplierServices {

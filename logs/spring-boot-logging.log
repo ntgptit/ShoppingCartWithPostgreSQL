@@ -1,669 +1,101 @@
-2019-12-15 21:06:26.039  INFO 14432 --- [restartedMain] com.giapnt.shoppingcart.postgresql.main  : Starting main on DESKTOP-RSJTEFM with PID 14432 (started by ntgpt in D:\Project\My Project\InteliJ\shopping-cart-postgresql)
-2019-12-15 21:06:26.048  INFO 14432 --- [restartedMain] com.giapnt.shoppingcart.postgresql.main  : No active profile set, falling back to default profiles: default
-2019-12-15 21:06:27.954 DEBUG 14432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\CategoryMapper.class]
-2019-12-15 21:06:27.955 DEBUG 14432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\OrdersMapper.class]
-2019-12-15 21:06:27.957 DEBUG 14432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\PaymentMapper.class]
-2019-12-15 21:06:27.958 DEBUG 14432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\ProductsMapper.class]
-2019-12-15 21:06:27.959 DEBUG 14432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\RoleMapper.class]
-2019-12-15 21:06:27.959 DEBUG 14432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\ShippersMapper.class]
-2019-12-15 21:06:27.959 DEBUG 14432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\SuppliersMapper.class]
-2019-12-15 21:06:27.959 DEBUG 14432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\UserRoleMapper.class]
-2019-12-15 21:06:27.960 DEBUG 14432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\UsersMapper.class]
-2019-12-15 21:06:27.961 DEBUG 14432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'categoryMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.CategoryMapper' mapperInterface
-2019-12-15 21:06:27.962 DEBUG 14432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'categoryMapper'.
-2019-12-15 21:06:27.963 DEBUG 14432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'ordersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.OrdersMapper' mapperInterface
-2019-12-15 21:06:27.964 DEBUG 14432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'ordersMapper'.
-2019-12-15 21:06:27.965 DEBUG 14432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'paymentMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.PaymentMapper' mapperInterface
-2019-12-15 21:06:27.965 DEBUG 14432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'paymentMapper'.
-2019-12-15 21:06:27.966 DEBUG 14432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'productsMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.ProductsMapper' mapperInterface
-2019-12-15 21:06:27.966 DEBUG 14432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'productsMapper'.
-2019-12-15 21:06:27.966 DEBUG 14432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'roleMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.RoleMapper' mapperInterface
-2019-12-15 21:06:27.967 DEBUG 14432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'roleMapper'.
-2019-12-15 21:06:27.968 DEBUG 14432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'shippersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.ShippersMapper' mapperInterface
-2019-12-15 21:06:27.969 DEBUG 14432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'shippersMapper'.
-2019-12-15 21:06:27.969 DEBUG 14432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'suppliersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.SuppliersMapper' mapperInterface
-2019-12-15 21:06:27.970 DEBUG 14432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'suppliersMapper'.
-2019-12-15 21:06:27.970 DEBUG 14432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userRoleMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.UserRoleMapper' mapperInterface
-2019-12-15 21:06:27.971 DEBUG 14432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'userRoleMapper'.
-2019-12-15 21:06:27.972 DEBUG 14432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'usersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.UsersMapper' mapperInterface
-2019-12-15 21:06:27.972 DEBUG 14432 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'usersMapper'.
-2019-12-15 21:06:29.535  INFO 14432 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-12-15 21:06:29.558  INFO 14432 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
-2019-12-15 21:06:30.234  INFO 14432 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-12-15 21:06:30.234 DEBUG 14432 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2019-12-15 21:06:30.236  INFO 14432 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4075 ms
-2019-12-15 21:06:34.509 DEBUG 14432 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\CategoryMapper.xml]'
-2019-12-15 21:06:34.545 DEBUG 14432 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\OrdersMapper.xml]'
-2019-12-15 21:06:34.561 DEBUG 14432 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\PaymentMapper.xml]'
-2019-12-15 21:06:34.586 DEBUG 14432 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\ProductsMapper.xml]'
-2019-12-15 21:06:34.600 DEBUG 14432 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\RoleMapper.xml]'
-2019-12-15 21:06:34.613 DEBUG 14432 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\ShippersMapper.xml]'
-2019-12-15 21:06:34.630 DEBUG 14432 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\SuppliersMapper.xml]'
-2019-12-15 21:06:34.647 DEBUG 14432 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\UserRoleMapper.xml]'
-2019-12-15 21:06:34.679 DEBUG 14432 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\UsersMapper.xml]'
-2019-12-15 21:06:35.373 DEBUG 14432 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-2019-12-15 21:06:35.783 DEBUG 14432 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2019-12-15 21:06:35.973 DEBUG 14432 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
-2019-12-15 21:06:36.098 DEBUG 14432 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2019-12-15 21:06:36.252 DEBUG 14432 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2019-12-15 21:06:36.580  WARN 14432 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2019-12-15 21:06:38.114  INFO 14432 --- [restartedMain] com.giapnt.shoppingcart.postgresql.main  : Started main in 12.784 seconds (JVM running for 14.235)
-2019-12-15 21:10:12.733  INFO 14432 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-15 21:10:12.733  INFO 14432 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-12-15 21:10:12.733 DEBUG 14432 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2019-12-15 21:10:12.744 DEBUG 14432 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2019-12-15 21:10:12.745  INFO 14432 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
-2019-12-15 21:10:12.807 DEBUG 14432 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
-2019-12-15 21:10:12.814 DEBUG 14432 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2019-12-15 21:10:12.873 DEBUG 14432 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2019-12-15 21:10:12.874 DEBUG 14432 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Dec 15 21:10:12 ICT 2019, status=401, error=Unauthorized, message=Unauthorized, path= (truncated)...]
-2019-12-15 21:10:13.014 DEBUG 14432 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 401
-2019-12-15 21:10:57.737 DEBUG 14432 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
-2019-12-15 21:10:57.738 DEBUG 14432 --- [http-nio-8081-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2019-12-15 21:10:57.739 DEBUG 14432 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2019-12-15 21:10:57.740 DEBUG 14432 --- [http-nio-8081-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Dec 15 21:10:57 ICT 2019, status=401, error=Unauthorized, message=Unauthorized, path= (truncated)...]
-2019-12-15 21:10:57.742 DEBUG 14432 --- [http-nio-8081-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 401
-2019-12-15 21:13:37.577  INFO 4164 --- [restartedMain] com.giapnt.shoppingcart.postgresql.main  : Starting main on DESKTOP-RSJTEFM with PID 4164 (started by ntgpt in D:\Project\My Project\InteliJ\shopping-cart-postgresql)
-2019-12-15 21:13:37.581  INFO 4164 --- [restartedMain] com.giapnt.shoppingcart.postgresql.main  : No active profile set, falling back to default profiles: default
-2019-12-15 21:13:40.062 DEBUG 4164 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\CategoryMapper.class]
-2019-12-15 21:13:40.063 DEBUG 4164 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\OrdersMapper.class]
-2019-12-15 21:13:40.063 DEBUG 4164 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\PaymentMapper.class]
-2019-12-15 21:13:40.063 DEBUG 4164 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\ProductsMapper.class]
-2019-12-15 21:13:40.063 DEBUG 4164 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\RoleMapper.class]
-2019-12-15 21:13:40.063 DEBUG 4164 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\ShippersMapper.class]
-2019-12-15 21:13:40.064 DEBUG 4164 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\SuppliersMapper.class]
-2019-12-15 21:13:40.064 DEBUG 4164 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\UserRoleMapper.class]
-2019-12-15 21:13:40.064 DEBUG 4164 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\UsersMapper.class]
-2019-12-15 21:13:40.065 DEBUG 4164 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'categoryMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.CategoryMapper' mapperInterface
-2019-12-15 21:13:40.066 DEBUG 4164 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'categoryMapper'.
-2019-12-15 21:13:40.067 DEBUG 4164 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'ordersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.OrdersMapper' mapperInterface
-2019-12-15 21:13:40.067 DEBUG 4164 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'ordersMapper'.
-2019-12-15 21:13:40.067 DEBUG 4164 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'paymentMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.PaymentMapper' mapperInterface
-2019-12-15 21:13:41.651 DEBUG 4164 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'paymentMapper'.
-2019-12-15 21:13:41.652 DEBUG 4164 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'productsMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.ProductsMapper' mapperInterface
-2019-12-15 21:13:41.652 DEBUG 4164 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'productsMapper'.
-2019-12-15 21:13:41.652 DEBUG 4164 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'roleMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.RoleMapper' mapperInterface
-2019-12-15 21:13:41.652 DEBUG 4164 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'roleMapper'.
-2019-12-15 21:13:41.652 DEBUG 4164 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'shippersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.ShippersMapper' mapperInterface
-2019-12-15 21:13:41.652 DEBUG 4164 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'shippersMapper'.
-2019-12-15 21:13:41.653 DEBUG 4164 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'suppliersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.SuppliersMapper' mapperInterface
-2019-12-15 21:13:41.653 DEBUG 4164 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'suppliersMapper'.
-2019-12-15 21:13:41.653 DEBUG 4164 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userRoleMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.UserRoleMapper' mapperInterface
-2019-12-15 21:13:41.653 DEBUG 4164 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'userRoleMapper'.
-2019-12-15 21:13:41.653 DEBUG 4164 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'usersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.UsersMapper' mapperInterface
-2019-12-15 21:13:41.654 DEBUG 4164 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'usersMapper'.
-2019-12-15 21:13:42.981  INFO 4164 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-12-15 21:13:42.982  INFO 4164 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
-2019-12-15 21:13:43.080  INFO 4164 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-12-15 21:13:43.081 DEBUG 4164 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2019-12-15 21:13:43.081  INFO 4164 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5406 ms
-2019-12-15 21:13:44.310 DEBUG 4164 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\CategoryMapper.xml]'
-2019-12-15 21:13:44.321 DEBUG 4164 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\OrdersMapper.xml]'
-2019-12-15 21:13:44.330 DEBUG 4164 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\PaymentMapper.xml]'
-2019-12-15 21:13:44.343 DEBUG 4164 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\ProductsMapper.xml]'
-2019-12-15 21:13:44.351 DEBUG 4164 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\RoleMapper.xml]'
-2019-12-15 21:13:44.358 DEBUG 4164 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\ShippersMapper.xml]'
-2019-12-15 21:13:44.368 DEBUG 4164 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\SuppliersMapper.xml]'
-2019-12-15 21:13:44.375 DEBUG 4164 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\UserRoleMapper.xml]'
-2019-12-15 21:13:44.384 DEBUG 4164 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\UsersMapper.xml]'
-2019-12-15 21:13:44.667 DEBUG 4164 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-2019-12-15 21:13:44.978 DEBUG 4164 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2019-12-15 21:13:45.088 DEBUG 4164 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
-2019-12-15 21:13:45.103 DEBUG 4164 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2019-12-15 21:13:45.111 DEBUG 4164 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2019-12-15 21:13:45.131  WARN 4164 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2019-12-15 21:13:45.624  INFO 4164 --- [restartedMain] com.giapnt.shoppingcart.postgresql.main  : Started main in 8.765 seconds (JVM running for 10.587)
-2019-12-15 21:13:50.150  INFO 4164 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-15 21:13:50.151  INFO 4164 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-12-15 21:13:50.151 DEBUG 4164 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2019-12-15 21:13:50.169 DEBUG 4164 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2019-12-15 21:13:50.169  INFO 4164 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
-2019-12-15 21:13:50.224 DEBUG 4164 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
-2019-12-15 21:13:50.231 DEBUG 4164 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2019-12-15 21:13:50.269 DEBUG 4164 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2019-12-15 21:13:50.270 DEBUG 4164 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Dec 15 21:13:50 ICT 2019, status=401, error=Unauthorized, message=Unauthorized, path= (truncated)...]
-2019-12-15 21:13:50.337 DEBUG 4164 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 401
-2019-12-15 21:17:13.143  INFO 11352 --- [restartedMain] com.giapnt.shoppingcart.postgresql.main  : Starting main on DESKTOP-RSJTEFM with PID 11352 (started by ntgpt in D:\Project\My Project\InteliJ\shopping-cart-postgresql)
-2019-12-15 21:17:13.160  INFO 11352 --- [restartedMain] com.giapnt.shoppingcart.postgresql.main  : No active profile set, falling back to default profiles: default
-2019-12-15 21:17:15.135 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\CategoryMapper.class]
-2019-12-15 21:17:15.137 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\OrdersMapper.class]
-2019-12-15 21:17:15.138 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\PaymentMapper.class]
-2019-12-15 21:17:15.138 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\ProductsMapper.class]
-2019-12-15 21:17:15.138 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\RoleMapper.class]
-2019-12-15 21:17:15.138 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\ShippersMapper.class]
-2019-12-15 21:17:15.139 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\SuppliersMapper.class]
-2019-12-15 21:17:15.139 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\UserRoleMapper.class]
-2019-12-15 21:17:15.139 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\UsersMapper.class]
-2019-12-15 21:17:15.141 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'categoryMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.CategoryMapper' mapperInterface
-2019-12-15 21:17:15.142 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'categoryMapper'.
-2019-12-15 21:17:15.143 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'ordersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.OrdersMapper' mapperInterface
-2019-12-15 21:17:15.143 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'ordersMapper'.
-2019-12-15 21:17:15.144 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'paymentMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.PaymentMapper' mapperInterface
-2019-12-15 21:17:15.144 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'paymentMapper'.
-2019-12-15 21:17:15.144 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'productsMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.ProductsMapper' mapperInterface
-2019-12-15 21:17:15.145 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'productsMapper'.
-2019-12-15 21:17:15.145 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'roleMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.RoleMapper' mapperInterface
-2019-12-15 21:17:15.145 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'roleMapper'.
-2019-12-15 21:17:15.146 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'shippersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.ShippersMapper' mapperInterface
-2019-12-15 21:17:15.146 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'shippersMapper'.
-2019-12-15 21:17:15.147 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'suppliersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.SuppliersMapper' mapperInterface
-2019-12-15 21:17:15.147 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'suppliersMapper'.
-2019-12-15 21:17:15.147 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userRoleMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.UserRoleMapper' mapperInterface
-2019-12-15 21:17:15.147 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'userRoleMapper'.
-2019-12-15 21:17:15.147 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'usersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.UsersMapper' mapperInterface
-2019-12-15 21:17:15.148 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'usersMapper'.
-2019-12-15 21:17:16.100  INFO 11352 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-12-15 21:17:16.101  INFO 11352 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
-2019-12-15 21:17:16.262  INFO 11352 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-12-15 21:17:16.262 DEBUG 11352 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2019-12-15 21:17:16.262  INFO 11352 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2977 ms
-2019-12-15 21:17:17.757 DEBUG 11352 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\CategoryMapper.xml]'
-2019-12-15 21:17:17.775 DEBUG 11352 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\OrdersMapper.xml]'
-2019-12-15 21:17:17.788 DEBUG 11352 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\PaymentMapper.xml]'
-2019-12-15 21:17:17.807 DEBUG 11352 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\ProductsMapper.xml]'
-2019-12-15 21:17:17.820 DEBUG 11352 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\RoleMapper.xml]'
-2019-12-15 21:17:17.832 DEBUG 11352 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\ShippersMapper.xml]'
-2019-12-15 21:17:17.847 DEBUG 11352 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\SuppliersMapper.xml]'
-2019-12-15 21:17:17.877 DEBUG 11352 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\UserRoleMapper.xml]'
-2019-12-15 21:17:17.895 DEBUG 11352 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\UsersMapper.xml]'
-2019-12-15 21:17:18.285 DEBUG 11352 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-2019-12-15 21:17:18.698 DEBUG 11352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2019-12-15 21:17:18.762 DEBUG 11352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
-2019-12-15 21:17:18.784 DEBUG 11352 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2019-12-15 21:17:18.795 DEBUG 11352 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2019-12-15 21:17:18.858  WARN 11352 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2019-12-15 21:17:19.494  INFO 11352 --- [restartedMain] com.giapnt.shoppingcart.postgresql.main  : Started main in 6.936 seconds (JVM running for 8.148)
-2019-12-15 21:17:19.635  INFO 11352 --- [http-nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-15 21:17:19.636  INFO 11352 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-12-15 21:17:19.636 DEBUG 11352 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2019-12-15 21:17:19.655 DEBUG 11352 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2019-12-15 21:17:19.655  INFO 11352 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
-2019-12-15 21:17:19.711 DEBUG 11352 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
-2019-12-15 21:17:19.715 DEBUG 11352 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2019-12-15 21:17:19.751 DEBUG 11352 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2019-12-15 21:17:19.752 DEBUG 11352 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Dec 15 21:17:19 ICT 2019, status=401, error=Unauthorized, message=Unauthorized, path= (truncated)...]
-2019-12-15 21:17:19.815 DEBUG 11352 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 401
-2019-12-15 21:17:41.738 DEBUG 11352 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
-2019-12-15 21:17:41.739 DEBUG 11352 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2019-12-15 21:17:41.740 DEBUG 11352 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2019-12-15 21:17:41.740 DEBUG 11352 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Dec 15 21:17:41 ICT 2019, status=401, error=Unauthorized, message=Unauthorized, path= (truncated)...]
-2019-12-15 21:17:41.743 DEBUG 11352 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 401
-2019-12-15 21:28:49.476  INFO 11352 --- [restartedMain] com.giapnt.shoppingcart.postgresql.main  : Starting main on DESKTOP-RSJTEFM with PID 11352 (started by ntgpt in D:\Project\My Project\InteliJ\shopping-cart-postgresql)
-2019-12-15 21:28:49.477  INFO 11352 --- [restartedMain] com.giapnt.shoppingcart.postgresql.main  : No active profile set, falling back to default profiles: default
-2019-12-15 21:28:49.980 DEBUG 11352 --- [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Searching for mappers annotated with @Mapper
-2019-12-15 21:28:49.982 DEBUG 11352 --- [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Using auto-configuration base package 'com.giapnt.shoppingcart.postgresql'
-2019-12-15 21:28:50.163  WARN 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.giapnt.shoppingcart.postgresql]' package. Please check your configuration.
-2019-12-15 21:28:50.486  INFO 11352 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-12-15 21:28:50.486  INFO 11352 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
-2019-12-15 21:28:50.508  INFO 11352 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-12-15 21:28:50.508 DEBUG 11352 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2019-12-15 21:28:50.508  INFO 11352 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1028 ms
-2019-12-15 21:28:50.588 DEBUG 11352 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-2019-12-15 21:28:50.738 DEBUG 11352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2019-12-15 21:28:50.799 DEBUG 11352 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
-2019-12-15 21:28:50.906 DEBUG 11352 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2019-12-15 21:28:50.918 DEBUG 11352 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2019-12-15 21:28:50.949  WARN 11352 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2019-12-15 21:28:50.988 DEBUG 11352 --- [restartedMain] o.m.s.b.a.MybatisAutoConfiguration       : Not found configuration for registering mapper bean using @MapperScan, MapperFactoryBean and MapperScannerConfigurer.
-2019-12-15 21:28:52.378  WARN 11352 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\CategoryMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\CategoryMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.giapnt.shoppingcart.postgresql.model.Category'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.giapnt.shoppingcart.postgresql.model.Category
-2019-12-15 21:28:52.379  INFO 11352 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2019-12-15 21:28:52.502 ERROR 11352 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+2020-04-10 20:51:03.849  INFO 14736 --- [restartedMain] com.giapnt.shoppingcart.postgresql.main  : Starting main on Minato with PID 14736 (C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes started by ntgpt in C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL)
+2020-04-10 20:51:03.854  INFO 14736 --- [restartedMain] com.giapnt.shoppingcart.postgresql.main  : No active profile set, falling back to default profiles: default
+2020-04-10 20:51:04.473 DEBUG 14736 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\CategoryMapper.class]
+2020-04-10 20:51:04.475 DEBUG 14736 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\OrdersMapper.class]
+2020-04-10 20:51:04.475 DEBUG 14736 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\PaymentMapper.class]
+2020-04-10 20:51:04.475 DEBUG 14736 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\ProductsMapper.class]
+2020-04-10 20:51:04.475 DEBUG 14736 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\RoleMapper.class]
+2020-04-10 20:51:04.475 DEBUG 14736 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\ShippersMapper.class]
+2020-04-10 20:51:04.475 DEBUG 14736 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\SuppliersMapper.class]
+2020-04-10 20:51:04.475 DEBUG 14736 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\UserRoleMapper.class]
+2020-04-10 20:51:04.476 DEBUG 14736 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\UsersMapper.class]
+2020-04-10 20:51:04.476 DEBUG 14736 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'categoryMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.CategoryMapper' mapperInterface
+2020-04-10 20:51:04.476 DEBUG 14736 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'categoryMapper'.
+2020-04-10 20:51:04.476 DEBUG 14736 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'ordersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.OrdersMapper' mapperInterface
+2020-04-10 20:51:04.476 DEBUG 14736 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'ordersMapper'.
+2020-04-10 20:51:04.477 DEBUG 14736 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'paymentMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.PaymentMapper' mapperInterface
+2020-04-10 20:51:04.477 DEBUG 14736 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'paymentMapper'.
+2020-04-10 20:51:04.477 DEBUG 14736 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'productsMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.ProductsMapper' mapperInterface
+2020-04-10 20:51:04.477 DEBUG 14736 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'productsMapper'.
+2020-04-10 20:51:04.477 DEBUG 14736 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'roleMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.RoleMapper' mapperInterface
+2020-04-10 20:51:04.477 DEBUG 14736 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'roleMapper'.
+2020-04-10 20:51:04.477 DEBUG 14736 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'shippersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.ShippersMapper' mapperInterface
+2020-04-10 20:51:04.477 DEBUG 14736 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'shippersMapper'.
+2020-04-10 20:51:04.477 DEBUG 14736 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'suppliersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.SuppliersMapper' mapperInterface
+2020-04-10 20:51:04.477 DEBUG 14736 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'suppliersMapper'.
+2020-04-10 20:51:04.477 DEBUG 14736 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userRoleMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.UserRoleMapper' mapperInterface
+2020-04-10 20:51:04.477 DEBUG 14736 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'userRoleMapper'.
+2020-04-10 20:51:04.477 DEBUG 14736 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'usersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.UsersMapper' mapperInterface
+2020-04-10 20:51:04.477 DEBUG 14736 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'usersMapper'.
+2020-04-10 20:51:04.928  INFO 14736 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-04-10 20:51:04.928  INFO 14736 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-04-10 20:51:05.001  INFO 14736 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-04-10 20:51:05.001 DEBUG 14736 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-04-10 20:51:05.001  INFO 14736 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1120 ms
+2020-04-10 20:51:05.540 DEBUG 14736 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\CategoryMapper.xml]'
+2020-04-10 20:51:05.549 DEBUG 14736 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\OrdersMapper.xml]'
+2020-04-10 20:51:05.555 DEBUG 14736 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\PaymentMapper.xml]'
+2020-04-10 20:51:05.563 DEBUG 14736 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\ProductsMapper.xml]'
+2020-04-10 20:51:05.569 DEBUG 14736 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\RoleMapper.xml]'
+2020-04-10 20:51:05.576 DEBUG 14736 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\ShippersMapper.xml]'
+2020-04-10 20:51:05.584 DEBUG 14736 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\SuppliersMapper.xml]'
+2020-04-10 20:51:05.590 DEBUG 14736 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\UserRoleMapper.xml]'
+2020-04-10 20:51:05.598 DEBUG 14736 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\UsersMapper.xml]'
+2020-04-10 20:51:05.759 DEBUG 14736 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-04-10 20:51:05.825 DEBUG 14736 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-04-10 20:51:05.869 DEBUG 14736 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2020-04-10 20:51:05.882 DEBUG 14736 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-04-10 20:51:05.888 DEBUG 14736 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-04-10 20:51:05.905  WARN 14736 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-04-10 20:51:06.067 ERROR 14736 --- [restartedMain] org.apache.catalina.util.LifecycleBase   : Failed to start component [Connector[HTTP/1.1-8081]]
 
-org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sqlSessionFactory' defined in class path resource [org/mybatis/spring/boot/autoconfigure/MybatisAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\CategoryMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\CategoryMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.giapnt.shoppingcart.postgresql.model.Category'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.giapnt.shoppingcart.postgresql.model.Category
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:607) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1008) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227) [tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:297) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) [spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
 	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
 	at com.giapnt.shoppingcart.postgresql.main.main(main.java:17) [classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source) ~[na:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Unknown Source) ~[na:1.8.0_241]
 	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.apache.ibatis.session.SqlSessionFactory]: Factory method 'sqlSessionFactory' threw exception; nested exception is org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\CategoryMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\CategoryMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.giapnt.shoppingcart.postgresql.model.Category'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.giapnt.shoppingcart.postgresql.model.Category
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	... 24 common frames omitted
-Caused by: org.springframework.core.NestedIOException: Failed to parse mapping resource: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\CategoryMapper.xml]'; nested exception is org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\CategoryMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.giapnt.shoppingcart.postgresql.model.Category'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.giapnt.shoppingcart.postgresql.model.Category
-	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:596) ~[mybatis-spring-2.0.2.jar:2.0.2]
-	at org.mybatis.spring.SqlSessionFactoryBean.afterPropertiesSet(SqlSessionFactoryBean.java:475) ~[mybatis-spring-2.0.2.jar:2.0.2]
-	at org.mybatis.spring.SqlSessionFactoryBean.getObject(SqlSessionFactoryBean.java:616) ~[mybatis-spring-2.0.2.jar:2.0.2]
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration.sqlSessionFactory(MybatisAutoConfiguration.java:180) ~[mybatis-spring-boot-autoconfigure-2.1.0.jar:2.1.0]
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$f90f5f80.CGLIB$sqlSessionFactory$2(<generated>) ~[mybatis-spring-boot-autoconfigure-2.1.0.jar:2.1.0]
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$f90f5f80$$FastClassBySpringCGLIB$$5185e140.invoke(<generated>) ~[mybatis-spring-boot-autoconfigure-2.1.0.jar:2.1.0]
-	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration$$EnhancerBySpringCGLIB$$f90f5f80.sqlSessionFactory(<generated>) ~[mybatis-spring-boot-autoconfigure-2.1.0.jar:2.1.0]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	... 25 common frames omitted
-Caused by: org.apache.ibatis.builder.BuilderException: Error parsing Mapper XML. The XML location is 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\CategoryMapper.xml]'. Cause: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.giapnt.shoppingcart.postgresql.model.Category'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.giapnt.shoppingcart.postgresql.model.Category
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:122) ~[mybatis-3.5.2.jar:3.5.2]
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.parse(XMLMapperBuilder.java:94) ~[mybatis-3.5.2.jar:3.5.2]
-	at org.mybatis.spring.SqlSessionFactoryBean.buildSqlSessionFactory(SqlSessionFactoryBean.java:594) ~[mybatis-spring-2.0.2.jar:2.0.2]
-	... 38 common frames omitted
-Caused by: org.apache.ibatis.builder.BuilderException: Error resolving class. Cause: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.giapnt.shoppingcart.postgresql.model.Category'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.giapnt.shoppingcart.postgresql.model.Category
-	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:118) ~[mybatis-3.5.2.jar:3.5.2]
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:262) ~[mybatis-3.5.2.jar:3.5.2]
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElement(XMLMapperBuilder.java:253) ~[mybatis-3.5.2.jar:3.5.2]
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.resultMapElements(XMLMapperBuilder.java:245) ~[mybatis-3.5.2.jar:3.5.2]
-	at org.apache.ibatis.builder.xml.XMLMapperBuilder.configurationElement(XMLMapperBuilder.java:118) ~[mybatis-3.5.2.jar:3.5.2]
-	... 40 common frames omitted
-Caused by: org.apache.ibatis.type.TypeException: Could not resolve type alias 'com.giapnt.shoppingcart.postgresql.model.Category'.  Cause: java.lang.ClassNotFoundException: Cannot find class: com.giapnt.shoppingcart.postgresql.model.Category
-	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:120) ~[mybatis-3.5.2.jar:3.5.2]
-	at org.apache.ibatis.builder.BaseBuilder.resolveAlias(BaseBuilder.java:149) ~[mybatis-3.5.2.jar:3.5.2]
-	at org.apache.ibatis.builder.BaseBuilder.resolveClass(BaseBuilder.java:116) ~[mybatis-3.5.2.jar:3.5.2]
-	... 44 common frames omitted
-Caused by: java.lang.ClassNotFoundException: Cannot find class: com.giapnt.shoppingcart.postgresql.model.Category
-	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:200) ~[mybatis-3.5.2.jar:3.5.2]
-	at org.apache.ibatis.io.ClassLoaderWrapper.classForName(ClassLoaderWrapper.java:89) ~[mybatis-3.5.2.jar:3.5.2]
-	at org.apache.ibatis.io.Resources.classForName(Resources.java:261) ~[mybatis-3.5.2.jar:3.5.2]
-	at org.apache.ibatis.type.TypeAliasRegistry.resolveAlias(TypeAliasRegistry.java:116) ~[mybatis-3.5.2.jar:3.5.2]
-	... 46 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_241]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[na:1.8.0_241]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[na:1.8.0_241]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source) ~[na:1.8.0_241]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) ~[na:1.8.0_241]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:230) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:213) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1124) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1210) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:585) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1005) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
+	... 19 common frames omitted
 
-2019-12-15 21:30:57.389  INFO 11352 --- [restartedMain] com.giapnt.shoppingcart.postgresql.main  : Starting main on DESKTOP-RSJTEFM with PID 11352 (started by ntgpt in D:\Project\My Project\InteliJ\shopping-cart-postgresql)
-2019-12-15 21:30:57.390  INFO 11352 --- [restartedMain] com.giapnt.shoppingcart.postgresql.main  : No active profile set, falling back to default profiles: default
-2019-12-15 21:30:58.014 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\CategoryMapper.class]
-2019-12-15 21:30:58.015 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\OrdersMapper.class]
-2019-12-15 21:30:58.016 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\PaymentMapper.class]
-2019-12-15 21:30:58.016 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\ProductsMapper.class]
-2019-12-15 21:30:58.017 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\RoleMapper.class]
-2019-12-15 21:30:58.017 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\ShippersMapper.class]
-2019-12-15 21:30:58.017 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\SuppliersMapper.class]
-2019-12-15 21:30:58.017 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\UserRoleMapper.class]
-2019-12-15 21:30:58.017 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\UsersMapper.class]
-2019-12-15 21:30:58.017 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'categoryMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.CategoryMapper' mapperInterface
-2019-12-15 21:30:58.018 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'categoryMapper'.
-2019-12-15 21:30:58.018 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'ordersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.OrdersMapper' mapperInterface
-2019-12-15 21:30:58.018 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'ordersMapper'.
-2019-12-15 21:30:58.018 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'paymentMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.PaymentMapper' mapperInterface
-2019-12-15 21:30:58.019 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'paymentMapper'.
-2019-12-15 21:30:58.019 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'productsMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.ProductsMapper' mapperInterface
-2019-12-15 21:30:58.020 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'productsMapper'.
-2019-12-15 21:30:58.020 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'roleMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.RoleMapper' mapperInterface
-2019-12-15 21:30:58.020 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'roleMapper'.
-2019-12-15 21:30:58.021 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'shippersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.ShippersMapper' mapperInterface
-2019-12-15 21:30:58.021 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'shippersMapper'.
-2019-12-15 21:30:58.021 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'suppliersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.SuppliersMapper' mapperInterface
-2019-12-15 21:30:58.021 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'suppliersMapper'.
-2019-12-15 21:30:58.021 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userRoleMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.UserRoleMapper' mapperInterface
-2019-12-15 21:30:58.021 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'userRoleMapper'.
-2019-12-15 21:30:58.021 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'usersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.UsersMapper' mapperInterface
-2019-12-15 21:30:58.022 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'usersMapper'.
-2019-12-15 21:30:58.203  INFO 11352 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-12-15 21:30:58.203  INFO 11352 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
-2019-12-15 21:30:58.222  INFO 11352 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2019-12-15 21:30:58.223 DEBUG 11352 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2019-12-15 21:30:58.223  INFO 11352 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 830 ms
-2019-12-15 21:30:58.272 ERROR 11352 --- [restartedMain] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'jwtAuthenticationTokenFilter' defined in class path resource [com/giapnt/shoppingcart/postgresql/security/SecurityConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.giapnt.shoppingcart.postgresql.security.JwtAuthenticationTokenFilter]: Factory method 'jwtAuthenticationTokenFilter' threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
-	The import com.mockproject cannot be resolved
-	The import com.mockproject cannot be resolved
-	JwtService cannot be resolved to a type
-	JwtService cannot be resolved to a type
-	JwtService cannot be resolved to a type
+2020-04-10 20:51:06.070  INFO 14736 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-04-10 20:51:06.077 ERROR 14736 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
 
-2019-12-15 21:30:58.276  INFO 11352 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2019-12-15 21:30:58.281  WARN 11352 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
-2019-12-15 21:30:58.290 ERROR 11352 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+***************************
+APPLICATION FAILED TO START
+***************************
 
-org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:156) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at com.giapnt.shoppingcart.postgresql.main.main(main.java:17) [classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:124) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:416) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:180) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:180) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	... 13 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtAuthenticationTokenFilter' defined in class path resource [com/giapnt/shoppingcart/postgresql/security/SecurityConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.giapnt.shoppingcart.postgresql.security.JwtAuthenticationTokenFilter]: Factory method 'jwtAuthenticationTokenFilter' threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
-	The import com.mockproject cannot be resolved
-	The import com.mockproject cannot be resolved
-	JwtService cannot be resolved to a type
-	JwtService cannot be resolved to a type
-	JwtService cannot be resolved to a type
+Description:
 
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:174) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:169) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:154) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:86) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:253) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:227) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5135) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_191]
-	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[na:1.8.0_191]
-	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_191]
-	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[na:1.8.0_191]
-	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:932) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:459) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:105) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	... 18 common frames omitted
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.giapnt.shoppingcart.postgresql.security.JwtAuthenticationTokenFilter]: Factory method 'jwtAuthenticationTokenFilter' threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
-	The import com.mockproject cannot be resolved
-	The import com.mockproject cannot be resolved
-	JwtService cannot be resolved to a type
-	JwtService cannot be resolved to a type
-	JwtService cannot be resolved to a type
+The Tomcat connector configured to listen on port 8081 failed to start. The port may already be in use or the connector may be misconfigured.
 
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	... 59 common frames omitted
-Caused by: java.lang.Error: Unresolved compilation problems: 
-	The import com.mockproject cannot be resolved
-	The import com.mockproject cannot be resolved
-	JwtService cannot be resolved to a type
-	JwtService cannot be resolved to a type
-	JwtService cannot be resolved to a type
+Action:
 
-	at com.giapnt.shoppingcart.postgresql.security.JwtAuthenticationTokenFilter.<init>(JwtAuthenticationTokenFilter.java:20) ~[classes/:na]
-	at com.giapnt.shoppingcart.postgresql.security.SecurityConfig.jwtAuthenticationTokenFilter(SecurityConfig.java:18) ~[classes/:na]
-	at com.giapnt.shoppingcart.postgresql.security.SecurityConfig$$EnhancerBySpringCGLIB$$5b8a48e7.CGLIB$jwtAuthenticationTokenFilter$0(<generated>) ~[classes/:na]
-	at com.giapnt.shoppingcart.postgresql.security.SecurityConfig$$EnhancerBySpringCGLIB$$5b8a48e7$$FastClassBySpringCGLIB$$480a4533.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at com.giapnt.shoppingcart.postgresql.security.SecurityConfig$$EnhancerBySpringCGLIB$$5b8a48e7.jwtAuthenticationTokenFilter(<generated>) ~[classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	... 60 common frames omitted
+Verify the connector's configuration, identify and stop any process that's listening on port 8081, or configure this application to listen on another port.
 
-2019-12-15 21:32:57.652  INFO 11352 --- [restartedMain] com.giapnt.shoppingcart.postgresql.main  : Starting main on DESKTOP-RSJTEFM with PID 11352 (started by ntgpt in D:\Project\My Project\InteliJ\shopping-cart-postgresql)
-2019-12-15 21:32:57.653  INFO 11352 --- [restartedMain] com.giapnt.shoppingcart.postgresql.main  : No active profile set, falling back to default profiles: default
-2019-12-15 21:32:57.947 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\CategoryMapper.class]
-2019-12-15 21:32:57.947 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\OrdersMapper.class]
-2019-12-15 21:32:57.947 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\PaymentMapper.class]
-2019-12-15 21:32:57.947 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\ProductsMapper.class]
-2019-12-15 21:32:57.948 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\RoleMapper.class]
-2019-12-15 21:32:57.948 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\ShippersMapper.class]
-2019-12-15 21:32:57.948 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\SuppliersMapper.class]
-2019-12-15 21:32:57.948 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\UserRoleMapper.class]
-2019-12-15 21:32:57.949 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\UsersMapper.class]
-2019-12-15 21:32:57.949 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'categoryMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.CategoryMapper' mapperInterface
-2019-12-15 21:32:57.949 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'categoryMapper'.
-2019-12-15 21:32:57.950 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'ordersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.OrdersMapper' mapperInterface
-2019-12-15 21:32:57.950 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'ordersMapper'.
-2019-12-15 21:32:57.950 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'paymentMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.PaymentMapper' mapperInterface
-2019-12-15 21:32:57.950 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'paymentMapper'.
-2019-12-15 21:32:57.950 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'productsMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.ProductsMapper' mapperInterface
-2019-12-15 21:32:57.951 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'productsMapper'.
-2019-12-15 21:32:57.951 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'roleMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.RoleMapper' mapperInterface
-2019-12-15 21:32:57.951 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'roleMapper'.
-2019-12-15 21:32:57.951 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'shippersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.ShippersMapper' mapperInterface
-2019-12-15 21:32:57.951 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'shippersMapper'.
-2019-12-15 21:32:57.951 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'suppliersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.SuppliersMapper' mapperInterface
-2019-12-15 21:32:57.951 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'suppliersMapper'.
-2019-12-15 21:32:57.951 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userRoleMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.UserRoleMapper' mapperInterface
-2019-12-15 21:32:57.951 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'userRoleMapper'.
-2019-12-15 21:32:57.951 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'usersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.UsersMapper' mapperInterface
-2019-12-15 21:32:57.951 DEBUG 11352 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'usersMapper'.
-2019-12-15 21:32:58.083  INFO 11352 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-12-15 21:32:58.084  INFO 11352 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
-2019-12-15 21:32:58.109  INFO 11352 --- [restartedMain] o.a.c.c.C.[Tomcat-3].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
-2019-12-15 21:32:58.109 DEBUG 11352 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2019-12-15 21:32:58.109  INFO 11352 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 453 ms
-2019-12-15 21:32:58.195 ERROR 11352 --- [restartedMain] o.s.b.web.embedded.tomcat.TomcatStarter  : Error starting Tomcat context. Exception: org.springframework.beans.factory.BeanCreationException. Message: Error creating bean with name 'jwtAuthenticationTokenFilter' defined in class path resource [com/giapnt/shoppingcart/postgresql/security/SecurityConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.giapnt.shoppingcart.postgresql.security.JwtAuthenticationTokenFilter]: Factory method 'jwtAuthenticationTokenFilter' threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
-	The import com.mockproject cannot be resolved
-	The import com.mockproject cannot be resolved
-	JwtService cannot be resolved to a type
-	JwtService cannot be resolved to a type
-	JwtService cannot be resolved to a type
-
-2019-12-15 21:32:58.199  INFO 11352 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2019-12-15 21:32:58.215  WARN 11352 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
-2019-12-15 21:32:58.230 ERROR 11352 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
-
-org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:156) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at com.giapnt.shoppingcart.postgresql.main.main(main.java:17) [classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:124) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:416) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:180) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:180) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	... 13 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtAuthenticationTokenFilter' defined in class path resource [com/giapnt/shoppingcart/postgresql/security/SecurityConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.giapnt.shoppingcart.postgresql.security.JwtAuthenticationTokenFilter]: Factory method 'jwtAuthenticationTokenFilter' threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
-	The import com.mockproject cannot be resolved
-	The import com.mockproject cannot be resolved
-	JwtService cannot be resolved to a type
-	JwtService cannot be resolved to a type
-	JwtService cannot be resolved to a type
-
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1321) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1160) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:211) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:174) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:169) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:154) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:86) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:253) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:227) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:53) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5135) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_191]
-	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[na:1.8.0_191]
-	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:841) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1384) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1374) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[na:1.8.0_191]
-	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134) ~[na:1.8.0_191]
-	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:909) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:421) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:932) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:459) ~[tomcat-embed-core-9.0.24.jar:9.0.24]
-	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:105) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
-	... 18 common frames omitted
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.giapnt.shoppingcart.postgresql.security.JwtAuthenticationTokenFilter]: Factory method 'jwtAuthenticationTokenFilter' threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
-	The import com.mockproject cannot be resolved
-	The import com.mockproject cannot be resolved
-	JwtService cannot be resolved to a type
-	JwtService cannot be resolved to a type
-	JwtService cannot be resolved to a type
-
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	... 59 common frames omitted
-Caused by: java.lang.Error: Unresolved compilation problems: 
-	The import com.mockproject cannot be resolved
-	The import com.mockproject cannot be resolved
-	JwtService cannot be resolved to a type
-	JwtService cannot be resolved to a type
-	JwtService cannot be resolved to a type
-
-	at com.giapnt.shoppingcart.postgresql.security.JwtAuthenticationTokenFilter.<init>(JwtAuthenticationTokenFilter.java:20) ~[classes/:na]
-	at com.giapnt.shoppingcart.postgresql.security.SecurityConfig.jwtAuthenticationTokenFilter(SecurityConfig.java:18) ~[classes/:na]
-	at com.giapnt.shoppingcart.postgresql.security.SecurityConfig$$EnhancerBySpringCGLIB$$5b8a48e7.CGLIB$jwtAuthenticationTokenFilter$0(<generated>) ~[classes/:na]
-	at com.giapnt.shoppingcart.postgresql.security.SecurityConfig$$EnhancerBySpringCGLIB$$5b8a48e7$$FastClassBySpringCGLIB$$480a4533.invoke(<generated>) ~[classes/:na]
-	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	at com.giapnt.shoppingcart.postgresql.security.SecurityConfig$$EnhancerBySpringCGLIB$$5b8a48e7.jwtAuthenticationTokenFilter(<generated>) ~[classes/:na]
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_191]
-	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_191]
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_191]
-	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_191]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
-	... 60 common frames omitted
-
-2019-12-15 21:38:02.846  INFO 19016 --- [restartedMain] com.giapnt.shoppingcart.postgresql.main  : Starting main on DESKTOP-RSJTEFM with PID 19016 (started by ntgpt in D:\Project\My Project\InteliJ\shopping-cart-postgresql)
-2019-12-15 21:38:02.852  INFO 19016 --- [restartedMain] com.giapnt.shoppingcart.postgresql.main  : No active profile set, falling back to default profiles: default
-2019-12-15 21:38:05.617 DEBUG 19016 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\CategoryMapper.class]
-2019-12-15 21:38:05.618 DEBUG 19016 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\OrdersMapper.class]
-2019-12-15 21:38:05.619 DEBUG 19016 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\PaymentMapper.class]
-2019-12-15 21:38:05.619 DEBUG 19016 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\ProductsMapper.class]
-2019-12-15 21:38:05.627 DEBUG 19016 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\RoleMapper.class]
-2019-12-15 21:38:05.627 DEBUG 19016 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\ShippersMapper.class]
-2019-12-15 21:38:05.628 DEBUG 19016 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\SuppliersMapper.class]
-2019-12-15 21:38:05.628 DEBUG 19016 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\UserRoleMapper.class]
-2019-12-15 21:38:05.629 DEBUG 19016 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\com\giapnt\shoppingcart\postgresql\mapper\UsersMapper.class]
-2019-12-15 21:38:05.630 DEBUG 19016 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'categoryMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.CategoryMapper' mapperInterface
-2019-12-15 21:38:05.631 DEBUG 19016 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'categoryMapper'.
-2019-12-15 21:38:05.632 DEBUG 19016 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'ordersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.OrdersMapper' mapperInterface
-2019-12-15 21:38:05.633 DEBUG 19016 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'ordersMapper'.
-2019-12-15 21:38:05.633 DEBUG 19016 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'paymentMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.PaymentMapper' mapperInterface
-2019-12-15 21:38:05.634 DEBUG 19016 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'paymentMapper'.
-2019-12-15 21:38:05.634 DEBUG 19016 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'productsMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.ProductsMapper' mapperInterface
-2019-12-15 21:38:05.635 DEBUG 19016 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'productsMapper'.
-2019-12-15 21:38:05.635 DEBUG 19016 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'roleMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.RoleMapper' mapperInterface
-2019-12-15 21:38:05.636 DEBUG 19016 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'roleMapper'.
-2019-12-15 21:38:05.637 DEBUG 19016 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'shippersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.ShippersMapper' mapperInterface
-2019-12-15 21:38:05.637 DEBUG 19016 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'shippersMapper'.
-2019-12-15 21:38:05.637 DEBUG 19016 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'suppliersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.SuppliersMapper' mapperInterface
-2019-12-15 21:38:05.637 DEBUG 19016 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'suppliersMapper'.
-2019-12-15 21:38:05.637 DEBUG 19016 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userRoleMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.UserRoleMapper' mapperInterface
-2019-12-15 21:38:05.638 DEBUG 19016 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'userRoleMapper'.
-2019-12-15 21:38:05.640 DEBUG 19016 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'usersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.UsersMapper' mapperInterface
-2019-12-15 21:38:05.641 DEBUG 19016 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'usersMapper'.
-2019-12-15 21:38:06.556  INFO 19016 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2019-12-15 21:38:06.557  INFO 19016 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
-2019-12-15 21:38:06.705  INFO 19016 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2019-12-15 21:38:06.705 DEBUG 19016 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
-2019-12-15 21:38:06.705  INFO 19016 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 3758 ms
-2019-12-15 21:38:08.786 DEBUG 19016 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\CategoryMapper.xml]'
-2019-12-15 21:38:08.824 DEBUG 19016 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\OrdersMapper.xml]'
-2019-12-15 21:38:08.909 DEBUG 19016 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\PaymentMapper.xml]'
-2019-12-15 21:38:09.004 DEBUG 19016 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\ProductsMapper.xml]'
-2019-12-15 21:38:09.050 DEBUG 19016 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\RoleMapper.xml]'
-2019-12-15 21:38:09.066 DEBUG 19016 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\ShippersMapper.xml]'
-2019-12-15 21:38:09.082 DEBUG 19016 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\SuppliersMapper.xml]'
-2019-12-15 21:38:09.093 DEBUG 19016 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\UserRoleMapper.xml]'
-2019-12-15 21:38:09.109 DEBUG 19016 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [D:\Project\My Project\InteliJ\shopping-cart-postgresql\target\classes\static\mapper\UsersMapper.xml]'
-2019-12-15 21:38:09.507 DEBUG 19016 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
-2019-12-15 21:38:09.641 DEBUG 19016 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
-2019-12-15 21:38:09.688 DEBUG 19016 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
-2019-12-15 21:38:09.704 DEBUG 19016 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
-2019-12-15 21:38:09.717 DEBUG 19016 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
-2019-12-15 21:38:09.752  WARN 19016 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
-2019-12-15 21:38:10.882  INFO 19016 --- [restartedMain] com.giapnt.shoppingcart.postgresql.main  : Started main in 8.715 seconds (JVM running for 11.242)
-2019-12-15 21:38:17.496  INFO 19016 --- [http-nio-8081-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2019-12-15 21:38:17.496  INFO 19016 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2019-12-15 21:38:17.496 DEBUG 19016 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
-2019-12-15 21:38:17.516 DEBUG 19016 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
-2019-12-15 21:38:17.516  INFO 19016 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
-2019-12-15 21:38:17.554 DEBUG 19016 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/category/all-category", parameters={}
-2019-12-15 21:38:17.568 DEBUG 19016 --- [http-nio-8081-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
-2019-12-15 21:38:17.571 DEBUG 19016 --- [http-nio-8081-exec-3] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
-2019-12-15 21:38:17.571 DEBUG 19016 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2019-12-15 21:38:17.581 DEBUG 19016 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
-2019-12-15 21:38:17.585 DEBUG 19016 --- [http-nio-8081-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
-2019-12-15 21:38:17.634 DEBUG 19016 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2019-12-15 21:38:17.635 DEBUG 19016 --- [http-nio-8081-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sun Dec 15 21:38:17 ICT 2019, status=404, error=Not Found, message=No message available,  (truncated)...]
-2019-12-15 21:38:17.747 DEBUG 19016 --- [http-nio-8081-exec-3] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
-2019-12-15 21:38:27.770 DEBUG 19016 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/rest/all-category", parameters={}
-2019-12-15 21:38:27.771 DEBUG 19016 --- [http-nio-8081-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<java.lang.Object> com.giapnt.shoppingcart.postgresql.controller.CategoryController.getAllCategory()
-2019-12-15 21:38:27.784  INFO 19016 --- [http-nio-8081-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2019-12-15 21:38:27.935  INFO 19016 --- [http-nio-8081-exec-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2019-12-15 21:38:27.950 DEBUG 19016 --- [http-nio-8081-exec-6] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
-2019-12-15 21:38:27.961 DEBUG 19016 --- [http-nio-8081-exec-6] org.mybatis.spring.SqlSessionUtils       : Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f4cba93]
-2019-12-15 21:38:27.971 DEBUG 19016 --- [http-nio-8081-exec-6] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@184891486 wrapping org.postgresql.jdbc.PgConnection@6763ceba] will be managed by Spring
-2019-12-15 21:38:28.007 DEBUG 19016 --- [http-nio-8081-exec-6] org.mybatis.spring.SqlSessionUtils       : Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f4cba93]
-2019-12-15 21:38:28.009 DEBUG 19016 --- [http-nio-8081-exec-6] org.mybatis.spring.SqlSessionUtils       : Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f4cba93]
-2019-12-15 21:38:28.009 DEBUG 19016 --- [http-nio-8081-exec-6] org.mybatis.spring.SqlSessionUtils       : Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f4cba93]
-2019-12-15 21:38:28.010 DEBUG 19016 --- [http-nio-8081-exec-6] org.mybatis.spring.SqlSessionUtils       : Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1f4cba93]
-2019-12-15 21:38:28.029 DEBUG 19016 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2019-12-15 21:38:28.030 DEBUG 19016 --- [http-nio-8081-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[]]
-2019-12-15 21:38:28.033 DEBUG 19016 --- [http-nio-8081-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
-2019-12-15 21:41:20.955 DEBUG 19016 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/rest/all-category", parameters={}
-2019-12-15 21:41:20.956 DEBUG 19016 --- [http-nio-8081-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<java.lang.Object> com.giapnt.shoppingcart.postgresql.controller.CategoryController.getAllCategory()
-2019-12-15 21:41:20.958 DEBUG 19016 --- [http-nio-8081-exec-1] org.mybatis.spring.SqlSessionUtils       : Creating a new SqlSession
-2019-12-15 21:41:20.959 DEBUG 19016 --- [http-nio-8081-exec-1] org.mybatis.spring.SqlSessionUtils       : Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@540c7484]
-2019-12-15 21:41:20.959 DEBUG 19016 --- [http-nio-8081-exec-1] o.m.s.t.SpringManagedTransaction         : JDBC Connection [HikariProxyConnection@1593057268 wrapping org.postgresql.jdbc.PgConnection@6763ceba] will be managed by Spring
-2019-12-15 21:41:20.987 DEBUG 19016 --- [http-nio-8081-exec-1] org.mybatis.spring.SqlSessionUtils       : Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@540c7484]
-2019-12-15 21:41:20.987 DEBUG 19016 --- [http-nio-8081-exec-1] org.mybatis.spring.SqlSessionUtils       : Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@540c7484]
-2019-12-15 21:41:20.987 DEBUG 19016 --- [http-nio-8081-exec-1] org.mybatis.spring.SqlSessionUtils       : Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@540c7484]
-2019-12-15 21:41:20.987 DEBUG 19016 --- [http-nio-8081-exec-1] org.mybatis.spring.SqlSessionUtils       : Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@540c7484]
-2019-12-15 21:41:20.989 DEBUG 19016 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json, application/json, application/*+json]
-2019-12-15 21:41:20.990 DEBUG 19016 --- [http-nio-8081-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[com.giapnt.shoppingcart.postgresql.model.Category@5452213f]]
-2019-12-15 21:41:21.030 DEBUG 19016 --- [http-nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
