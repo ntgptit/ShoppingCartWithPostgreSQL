@@ -18,16 +18,19 @@
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
 
-        <javaModelGenerator targetPackage="com.giapnt.shoppingcart.postgresql.generator.model" targetProject="ShoppingCartWithPostgreSQL">
+        <javaModelGenerator targetPackage="com.giapnt.shoppingcart.postgresql.model"
+                            targetProject="ShoppingCartWithPostgreSQL">
             <property name="enableSubPackages" value="false"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
-        <sqlMapGenerator targetPackage="com.giapnt.shoppingcart.postgresql.generator.sqlXML" targetProject="ShoppingCartWithPostgreSQL">
+        <sqlMapGenerator targetPackage="com.giapnt.shoppingcart.postgresql.sqlXML"
+                         targetProject="ShoppingCartWithPostgreSQL">
             <property name="enableSubPackages" value="false"/>
         </sqlMapGenerator>
 
-        <javaClientGenerator targetPackage="com.giapnt.shoppingcart.postgresql.generator.mapper" type="XMLMAPPER" targetProject="ShoppingCartWithPostgreSQL">
+        <javaClientGenerator targetPackage="com.giapnt.shoppingcart.postgresql.mapper" type="XMLMAPPER"
+                             targetProject="ShoppingCartWithPostgreSQL">
             <property name="enableSubPackages" value="false"/>
         </javaClientGenerator>
 

@@ -28,7 +28,6 @@ public class SupplierServicesImpl implements SupplierServices {
     @Override
     public List<Suppliers> getAllListSuppliers() {
 
-
         try {
             List<Suppliers> suppliers = suppliersMapper.selectAll();
 

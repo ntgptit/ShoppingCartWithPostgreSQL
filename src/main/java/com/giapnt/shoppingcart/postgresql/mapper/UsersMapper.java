@@ -1,5 +1,7 @@
 package com.giapnt.shoppingcart.postgresql.mapper;
 
+import com.giapnt.shoppingcart.postgresql.model.Users;
+
 import java.util.List;
 
 public interface UsersMapper {

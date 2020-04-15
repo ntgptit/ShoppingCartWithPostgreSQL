@@ -1,9 +1,7 @@
 package com.giapnt.shoppingcart.postgresql.services.impl;
 
-import com.giapnt.shoppingcart.postgresql.constant.Contants;
+import com.giapnt.shoppingcart.postgresql.constant.ContantsForBussines;
 import com.giapnt.shoppingcart.postgresql.mapper.OrdersMapper;
-import com.giapnt.shoppingcart.postgresql.mapper.OrdersMapper;
-import com.giapnt.shoppingcart.postgresql.model.Orders;
 import com.giapnt.shoppingcart.postgresql.model.Orders;
 import com.giapnt.shoppingcart.postgresql.services.OrderServices;
 import org.slf4j.Logger;
@@ -77,7 +75,7 @@ public class OrderServicesImpl implements OrderServices {
             if (checkUpdate != 0) {
                 mapOrders.put(checkUpdate, listOrders);
             } else {
-                mapOrders.put(Contants.DATA_NOT_MODIFIED, listOrders);
+                mapOrders.put(ContantsForBussines.DATA_NOT_MODIFIED, listOrders);
             }
 
             result = mapOrders;
@@ -103,7 +101,7 @@ public class OrderServicesImpl implements OrderServices {
             if (checkInsert != 0) {
                 mapOrders.put(checkInsert, listOrder);
             } else {
-                mapOrders.put(Contants.DATA_NOT_MODIFIED, listOrder);
+                mapOrders.put(ContantsForBussines.DATA_NOT_MODIFIED, listOrder);
             }
 
             result = mapOrders;
@@ -128,7 +126,7 @@ public class OrderServicesImpl implements OrderServices {
             if (checkDelete != 0) {
                 mapOrders.put(checkDelete, listOrder);
             } else {
-                mapOrders.put(Contants.DATA_NOT_MODIFIED, listOrder);
+                mapOrders.put(ContantsForBussines.DATA_NOT_MODIFIED, listOrder);
             }
             result = mapOrders;
         } catch (Exception e) {
