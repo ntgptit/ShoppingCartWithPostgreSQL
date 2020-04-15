@@ -1,6 +1,6 @@
 package com.giapnt.shoppingcart.postgresql.controller;
 
-import com.giapnt.shoppingcart.postgresql.constant.Contants;
+import com.giapnt.shoppingcart.postgresql.constant.ContantsForBussines;
 import com.giapnt.shoppingcart.postgresql.model.Orders;
 import com.giapnt.shoppingcart.postgresql.services.OrderServices;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -56,10 +56,10 @@ public class OrderController {
         try {
             mapOrdersModify = orderServices.modifyOrderByPrimaryKey(order);
             for (Map.Entry<Integer, Object> entry : mapOrdersModify.entrySet())
-                if (entry.getKey() == Contants.DATA_NOT_MODIFIED) {
+                if (entry.getKey() == ContantsForBussines.DATA_NOT_MODIFIED) {
                     result = new ResponseEntity<>(mapOrdersModify, HttpStatus.NOT_MODIFIED);
                     break;
-                } else if (entry.getKey() == Contants.DUPLICATE_NAME) {
+                } else if (entry.getKey() == ContantsForBussines.DUPLICATE_NAME) {
                     result = new ResponseEntity<>(mapOrdersModify, HttpStatus.CONFLICT);
                     break;
                 } else {
@@ -86,10 +86,10 @@ public class OrderController {
         try {
             mapOrdersCreate = orderServices.addNewOrder(order);
             for (Map.Entry<Integer, Object> entry : mapOrdersCreate.entrySet())
-                if (entry.getKey() == Contants.DATA_NOT_MODIFIED) {
+                if (entry.getKey() == ContantsForBussines.DATA_NOT_MODIFIED) {
                     result = new ResponseEntity<>(mapOrdersCreate, HttpStatus.NOT_MODIFIED);
                     break;
-                } else if (entry.getKey() == Contants.DUPLICATE_NAME) {
+                } else if (entry.getKey() == ContantsForBussines.DUPLICATE_NAME) {
                     result = new ResponseEntity<>(mapOrdersCreate, HttpStatus.CONFLICT);
                     break;
                 } else {
@@ -117,7 +117,7 @@ public class OrderController {
         try {
             mapOrders = orderServices.removeOrder(order);
             for (Map.Entry<Integer, Object> entry : mapOrders.entrySet())
-                if (entry.getKey() == Contants.DATA_NOT_MODIFIED) {
+                if (entry.getKey() == ContantsForBussines.DATA_NOT_MODIFIED) {
                     result = new ResponseEntity<>(mapOrders, HttpStatus.NOT_MODIFIED);
                     break;
                 } else {

@@ -1,6 +1,6 @@
 package com.giapnt.shoppingcart.postgresql.controller;
 
-import com.giapnt.shoppingcart.postgresql.constant.Contants;
+import com.giapnt.shoppingcart.postgresql.constant.ContantsForBussines;
 import com.giapnt.shoppingcart.postgresql.model.Category;
 import com.giapnt.shoppingcart.postgresql.services.CategoryServices;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,9 +12,11 @@ import javax.validation.Valid;
 import java.util.List;
 import java.util.Map;
 
-import static java.util.Collections.*;
+import static java.util.Collections.emptyList;
+import static java.util.Collections.emptyMap;
 
 @RestController
+@CrossOrigin(maxAge = 3600)
 @RequestMapping("/rest")
 public class CategoryController {
     /**
@@ -55,10 +57,10 @@ public class CategoryController {
         try {
             mapCategoryModify = categoryServices.modifyCategoryByPrimaryKey(category);
             for (Map.Entry<Integer, Object> entry : mapCategoryModify.entrySet())
-                if (entry.getKey() == Contants.DATA_NOT_MODIFIED) {
+                if (entry.getKey() == ContantsForBussines.DATA_NOT_MODIFIED) {
                     result = new ResponseEntity<>(mapCategoryModify, HttpStatus.NOT_MODIFIED);
                     break;
-                } else if (entry.getKey() == Contants.DUPLICATE_NAME) {
+                } else if (entry.getKey() == ContantsForBussines.DUPLICATE_NAME) {
                     result = new ResponseEntity<>(mapCategoryModify, HttpStatus.CONFLICT);
                     break;
                 } else {
@@ -84,11 +86,11 @@ public class CategoryController {
         Map<Integer, Object> mapCategoryCreate;
         try {
             mapCategoryCreate = categoryServices.addNewCategory(category);
-            for (Map.Entry<Integer, Object> entry : mapCategoryCreate.entrySet()) 
-                if (entry.getKey() == Contants.DATA_NOT_MODIFIED) {
+            for (Map.Entry<Integer, Object> entry : mapCategoryCreate.entrySet())
+                if (entry.getKey() == ContantsForBussines.DATA_NOT_MODIFIED) {
                     result = new ResponseEntity<>(mapCategoryCreate, HttpStatus.NOT_MODIFIED);
                     break;
-                } else if (entry.getKey() == Contants.DUPLICATE_NAME) {
+                } else if (entry.getKey() == ContantsForBussines.DUPLICATE_NAME) {
                     result = new ResponseEntity<>(mapCategoryCreate, HttpStatus.CONFLICT);
                     break;
                 } else {
@@ -115,7 +117,7 @@ public class CategoryController {
         try {
             mapCategory = categoryServices.removeCategory(category);
             for (Map.Entry<Integer, Object> entry : mapCategory.entrySet())
-                if (entry.getKey() == Contants.DATA_NOT_MODIFIED) {
+                if (entry.getKey() == ContantsForBussines.DATA_NOT_MODIFIED) {
                     result = new ResponseEntity<>(mapCategory, HttpStatus.NOT_MODIFIED);
                     break;
                 } else {

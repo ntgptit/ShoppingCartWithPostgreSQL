@@ -1,6 +1,6 @@
 package com.giapnt.shoppingcart.postgresql.services.impl;
 
-import com.giapnt.shoppingcart.postgresql.constant.Contants;
+import com.giapnt.shoppingcart.postgresql.constant.ContantsForBussines;
 import com.giapnt.shoppingcart.postgresql.mapper.CategoryMapper;
 import com.giapnt.shoppingcart.postgresql.model.Category;
 import com.giapnt.shoppingcart.postgresql.services.CategoryServices;
@@ -59,11 +59,11 @@ public class CategoryServicesImpl implements CategoryServices {
                 if (checkUpdate != 0) {
                     mapCategory.put(checkUpdate, categories);
                 } else {
-                    mapCategory.put(Contants.DATA_NOT_MODIFIED, categories);
+                    mapCategory.put(ContantsForBussines.DATA_NOT_MODIFIED, categories);
                 }
             } else {
                 categories = categoryMapper.selectAll();
-                mapCategory.put(Contants.DUPLICATE_NAME, categories);
+                mapCategory.put(ContantsForBussines.DUPLICATE_NAME, categories);
             }
             result = mapCategory;
         } catch (Exception e) {
@@ -88,11 +88,11 @@ public class CategoryServicesImpl implements CategoryServices {
                 if (checkInsert != 0) {
                     mapCategory.put(checkInsert, categories);
                 } else {
-                    mapCategory.put(Contants.DATA_NOT_MODIFIED, categories);
+                    mapCategory.put(ContantsForBussines.DATA_NOT_MODIFIED, categories);
                 }
             } else {
                 categories = categoryMapper.selectAll();
-                mapCategory.put(Contants.DUPLICATE_NAME, categories);
+                mapCategory.put(ContantsForBussines.DUPLICATE_NAME, categories);
             }
             result = mapCategory;
         } catch (Exception e) {
@@ -116,7 +116,7 @@ public class CategoryServicesImpl implements CategoryServices {
             if (checkDelete != 0) {
                 mapCategory.put(checkDelete, categories);
             } else {
-                mapCategory.put(Contants.DATA_NOT_MODIFIED, categories);
+                mapCategory.put(ContantsForBussines.DATA_NOT_MODIFIED, categories);
             }
             result = mapCategory;
         } catch (Exception e) {
