@@ -1,0 +1,14 @@
+{
+  "properties": [
+    {
+      "name": "log4j.logger.query",
+      "type": "java.lang.String",
+      "description": "Description for log4j.logger.query."
+    },
+    {
+      "name": "log4j.logger.com.giapnt.shoppingcart.postgresql.mapper",
+      "type": "java.lang.String",
+      "description": "Description for log4j.logger.com.giapnt.shoppingcart.postgresql.mapper."
+    }
+  ]
+}

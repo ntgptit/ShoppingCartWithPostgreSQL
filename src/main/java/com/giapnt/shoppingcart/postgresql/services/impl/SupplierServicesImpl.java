@@ -27,62 +27,22 @@ public class SupplierServicesImpl implements SupplierServices {
 
     @Override
     public List<Suppliers> getAllListSuppliers() {
-
-        try {
-            List<Suppliers> suppliers = suppliersMapper.selectAll();
-
-            return suppliers;
-
-        } catch (Exception e) {
-            logger.error(e.getMessage());
-
-        }
-        return null;
+        return suppliersMapper.selectAll();
     }
 
     @Override
     public List<Suppliers> getListSuppliersActive() {
-
-        try {
-            List<Suppliers> suppliers = suppliersMapper.selectListIsActive(ContantsForBussines.ACTIVE);
-
-            return suppliers;
-
-        } catch (Exception e) {
-            logger.error(e.getMessage());
-
-        }
-        return null;
+        return suppliersMapper.selectListIsActive(ContantsForBussines.ACTIVE);
     }
 
     @Override
     public List<Suppliers> getListSuppliersDeactivate() {
-
-        try {
-            List<Suppliers> suppliers = suppliersMapper.selectListIsActive(ContantsForBussines.INACTIVE);
-
-            return suppliers;
-
-        } catch (Exception e) {
-            logger.error(e.getMessage());
-
-        }
-        return null;
+        return suppliersMapper.selectListIsActive(ContantsForBussines.INACTIVE);
     }
 
     @Override
     public Suppliers getSuppliersById(long id) {
-
-        try {
-            Suppliers suppliers = suppliersMapper.selectByPrimaryKey(id);
-
-            return suppliers;
-
-        } catch (Exception e) {
-            logger.error(e.getMessage());
-
-        }
-        return null;
+        return suppliersMapper.selectByPrimaryKey(id);
     }
 
     @Override
