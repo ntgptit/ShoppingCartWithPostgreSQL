@@ -1,8 +1,8 @@
 package com.giapnt.shoppingcart.postgresql.controller;
 
-import com.giapnt.shoppingcart.postgresql.constant.ContantsForBussines;
-import com.giapnt.shoppingcart.postgresql.model.Orders;
-import com.giapnt.shoppingcart.postgresql.services.OrderServices;
+import com.giapnt.shoppingcart.postgresql.constant.AppServiceContants;
+import com.giapnt.shoppingcart.postgresql.model.Order;
+import com.giapnt.shoppingcart.postgresql.services.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,7 +22,7 @@ public class OrderController {
      *
      */
     @Autowired
-    private OrderServices orderServices;
+    private OrderService orderService;
 
     /**
      * @return result
@@ -30,17 +30,17 @@ public class OrderController {
     @GetMapping(value = "/all-order")
     public ResponseEntity<Object> getAllOrder() {
         ResponseEntity<Object> result = null;
-        List<Orders> orders;
+        List<Order> order;
         try {
-            orders = orderServices.getAllListOrder();
-            if (orders != null && !orders.isEmpty()) {
-                result = new ResponseEntity<>(orders, HttpStatus.OK);
+            order = orderService.getAllListOrder();
+            if (order != null && !order.isEmpty()) {
+                result = new ResponseEntity<>(order, HttpStatus.OK);
             }
         } catch (Exception e) {
-            orders = emptyList();
+            order = emptyList();
         }
         if (result == null) {
-            result = new ResponseEntity<>(orders, HttpStatus.NOT_FOUND);
+            result = new ResponseEntity<>(order, HttpStatus.NOT_FOUND);
         }
         return result;
     }
@@ -50,16 +50,16 @@ public class OrderController {
      * @return result
      */
     @PostMapping(value = "/modify-order-information")
-    public ResponseEntity<Object> modifyOrderInfomation(@Valid @RequestBody Orders order) {
+    public ResponseEntity<Object> modifyOrderInfomation(@Valid @RequestBody Order order) {
         ResponseEntity<Object> result = null;
         Map<Integer, Object> mapOrdersModify;
         try {
-            mapOrdersModify = orderServices.modifyOrderByPrimaryKey(order);
+            mapOrdersModify = orderService.modifyOrderByPrimaryKey(order);
             for (Map.Entry<Integer, Object> entry : mapOrdersModify.entrySet())
-                if (entry.getKey() == ContantsForBussines.DATA_NOT_MODIFIED) {
+                if (entry.getKey() == AppServiceContants.DATA_NOT_MODIFIED) {
                     result = new ResponseEntity<>(mapOrdersModify, HttpStatus.NOT_MODIFIED);
                     break;
-                } else if (entry.getKey() == ContantsForBussines.DUPLICATE_NAME) {
+                } else if (entry.getKey() == AppServiceContants.DUPLICATE_NAME) {
                     result = new ResponseEntity<>(mapOrdersModify, HttpStatus.CONFLICT);
                     break;
                 } else {
@@ -80,16 +80,16 @@ public class OrderController {
      * @return result
      */
     @PostMapping(value = "/create-new-order")
-    public ResponseEntity<Object> createNewOrders(@Valid @RequestBody Orders order) {
+    public ResponseEntity<Object> createNewOrders(@Valid @RequestBody Order order) {
         ResponseEntity<Object> result = null;
         Map<Integer, Object> mapOrdersCreate;
         try {
-            mapOrdersCreate = orderServices.addNewOrder(order);
+            mapOrdersCreate = orderService.addNewOrder(order);
             for (Map.Entry<Integer, Object> entry : mapOrdersCreate.entrySet())
-                if (entry.getKey() == ContantsForBussines.DATA_NOT_MODIFIED) {
+                if (entry.getKey() == AppServiceContants.DATA_NOT_MODIFIED) {
                     result = new ResponseEntity<>(mapOrdersCreate, HttpStatus.NOT_MODIFIED);
                     break;
-                } else if (entry.getKey() == ContantsForBussines.DUPLICATE_NAME) {
+                } else if (entry.getKey() == AppServiceContants.DUPLICATE_NAME) {
                     result = new ResponseEntity<>(mapOrdersCreate, HttpStatus.CONFLICT);
                     break;
                 } else {
@@ -111,13 +111,13 @@ public class OrderController {
      */
 
     @PostMapping(value = "/remove-order")
-    public ResponseEntity<Object> removeOrders(@Valid @RequestBody Orders order) {
+    public ResponseEntity<Object> removeOrders(@Valid @RequestBody Order order) {
         ResponseEntity<Object> result = null;
         Map<Integer, Object> mapOrders;
         try {
-            mapOrders = orderServices.removeOrder(order);
+            mapOrders = orderService.removeOrder(order);
             for (Map.Entry<Integer, Object> entry : mapOrders.entrySet())
-                if (entry.getKey() == ContantsForBussines.DATA_NOT_MODIFIED) {
+                if (entry.getKey() == AppServiceContants.DATA_NOT_MODIFIED) {
                     result = new ResponseEntity<>(mapOrders, HttpStatus.NOT_MODIFIED);
                     break;
                 } else {

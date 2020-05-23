@@ -1,6 +1,5 @@
 package com.giapnt.shoppingcart.postgresql.model;
 
-import java.util.Date;
 @lombok.Data
 public class Category {
     /**

@@ -1,11 +1,12 @@
 package com.giapnt.shoppingcart.postgresql.exception;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
-@AllArgsConstructor
 public class ErrorMessage {
     private int statusCode;
     private String message;
+    public ErrorMessage(int i, String localizedMessage) {
+        // TODO Auto-generated constructor stub
+    }
 }
