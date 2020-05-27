@@ -1,7 +1,5 @@
 package com.giapnt.shoppingcart.postgresql.exception;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -11,7 +9,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
-import com.giapnt.shoppingcart.postgresql.constant.AppServiceContants;
 import com.giapnt.shoppingcart.postgresql.controller.dto.response.ResponseDTO;
 
 /**
@@ -24,7 +21,7 @@ public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionH
 	/**
 	 * 
 	 */
-	private static final Logger logger = LoggerFactory.getLogger(RestResponseEntityExceptionHandler.class);
+//	private static final Logger logger = LoggerFactory.getLogger(RestResponseEntityExceptionHandler.class);
 
 	public RestResponseEntityExceptionHandler() {
 		super();
@@ -65,8 +62,8 @@ public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionH
 	}
 
 	private ResponseDTO message(final HttpStatus httpStatus, final Exception ex) {
-		final String message = ex.getMessage() == null ? ex.getClass().getSimpleName() : ex.getMessage();
-		final String devMessage = ex.getClass().getSimpleName();
+//		final String message = ex.getMessage() == null ? ex.getClass().getSimpleName() : ex.getMessage();
+//		final String devMessage = ex.getClass().getSimpleName();
 
 		return null;
 	}
