@@ -1,11 +1,12 @@
-1,CDI VI?T NAM,CDI,H� ?�ng,H� N?i,Vi?t Nam,131321132,ntgptit@gmail.com1,google.com.vn,VISA,GOOD,1,11,INIT,INIT,1,INIT,INIT,2003-01-01 00:00:00,2003-01-01 00:00:00
-2,C�NG TY C? PH?N VINAMECO,VINAMECO,Ho�ng Mai,H� N?i,Vi?t Nam,131321133,ntgptit@gmail.com2,google.com.vn,VISA,GOOD,2,12,INIT,INIT,1,INIT,INIT,2003-01-01 00:00:00,2003-01-01 00:00:00
-3,C�NG TY TNHH CNTT VISION VSP,VSP,H� ?�ng,H� N?i,Vi?t Nam,131321134,ntgptit@gmail.com3,google.com.vn,VISA,GOOD,3,13,INIT,INIT,1,INIT,INIT,2003-01-01 00:00:00,2003-01-01 00:00:00
-4,C�NG TY TNHH HXC,HXC,?�ng Anh,H� N?i,Vi?t Nam,131321135,ntgptit@gmail.com4,google.com.vn,VISA,GOOD,4,14,INIT,INIT,1,INIT,INIT,2003-01-01 00:00:00,2003-01-01 00:00:00
-5,UK SUPPLIES DIRECT VI?T NAM,DIRECT,Ba ?�nh,H� N?i,Vi?t Nam,131321136,ntgptit@gmail.com5,google.com.vn,VISA,GOOD,5,15,INIT,INIT,1,INIT,INIT,2003-01-01 00:00:00,2003-01-01 00:00:00
-6,C�NG TY C? PH?N VI?N TH�NG FPT,FPT,Ba ?�nh,H� N?i,Vi?t Nam,131321137,ntgptit@gmail.com6,google.com.vn,VISA,GOOD,6,16,INIT,INIT,1,INIT,INIT,2003-01-01 00:00:00,2003-01-01 00:00:00
-7,C�ng ty TNHH THI?T B? ?I?N DOBO H�N QU?C,DOBO,Nam T? li�m,H� N?i,Vi?t Nam,131321138,ntgptit@gmail.com7,google.com.vn,VISA,GOOD,7,17,INIT,INIT,1,INIT,INIT,2003-01-01 00:00:00,2003-01-01 00:00:00
-8,C�NG TY TNHH XNK T?NG H?P KIM NG�N ANH,KNA,??ng ?a,H� N?i,Vi?t Nam,131321139,ntgptit@gmail.com8,google.com.vn,VISA,GOOD,8,18,INIT,INIT,1,INIT,INIT,2003-01-01 00:00:00,2003-01-01 00:00:00
-9,C�NG TY C? PH?N XU?T NH?P KH?U MASTER FOOD,MF,Hai B� Tr?ng,H� N?i,Vi?t Nam,131321140,ntgptit@gmail.com9,google.com.vn,VISA,GOOD,9,19,INIT,INIT,1,INIT,INIT,2003-01-01 00:00:00,2003-01-01 00:00:00
-10,C�NG TY C? PH?N TH??NG MAI XU?T NH?P KH?U FRESHLIFE VI?T NAM,FRESHLIFE,Thanh Xu�n,H� N?i,Vi?t Nam,131321141,ntgptit@gmail.com10,google.com.vn,VISA,GOOD,10,20,INIT,INIT,1,INIT,INIT,2003-01-01 00:00:00,2003-01-01 00:00:00
-11,C�NG TY TNHH ??U T? V� D?CH V? TH??NG M?I IVESCOM,IVESCOM,T�y H?,H� N?i,Vi?t Nam,131321142,ntgptit@gmail.com11,google.com.vn,VISA,GOOD,11,21,INIT,INIT,1,INIT,INIT,2003-01-01 00:00:00,2003-01-01 00:00:00
+id,name,code,address,city,country,phone,email,url,payment_methods,type_goods,discount_type,discount_available,current_order,notes,is_active,created_by,updated_by,created_timestamp,updated_timestamp
+2,CÔNG TY CỔ PHẦN VINAMECO,VINAMECO,Cầu Giấy,Hà Nội,Việt Nam,131321133,ntgptit@gmail.com2,google.com.vn,VISA,2,2,12,INIT,INIT,0,INIT,INIT,2003-01-01 00:00:00,2003-01-01 00:00:00
+3,CÔNG TY TNHH CNTT VISION VSP,VSP,Ba Đình,Hà Nội,Việt Nam,131321134,ntgptit@gmail.com3,google.com.vn,VISA,3,3,13,INIT,INIT,1,INIT,INIT,2003-01-01 00:00:00,2003-01-01 00:00:00
+4,CÔNG TY TNHH HXC,HXC,Hai Bà Trưng,Hà Nội,Việt Nam,131321135,ntgptit@gmail.com4,google.com.vn,VISA,1,1,14,INIT,INIT,0,INIT,INIT,2003-01-01 00:00:00,2003-01-01 00:00:00
+5,UK SUPPLIES DIRECT VIỆT NAM,DIRECT,Hoàng Mai,Hà Nội,Việt Nam,131321136,ntgptit@gmail.com5,google.com.vn,VISA,2,2,15,INIT,INIT,1,INIT,INIT,2003-01-01 00:00:00,2003-01-01 00:00:00
+6,CÔNG TY CỔ PHẦN VIỄN THÔNG FPT,FPT,Hà Đông,Hà Nội,Việt Nam,131321137,ntgptit@gmail.com6,google.com.vn,VISA,3,3,16,INIT,INIT,1,INIT,INIT,2003-01-01 00:00:00,2003-01-01 00:00:00
+7,CÔNG TY CỔ PHẦN HÀ NỘI FOODS VIỆT NAM,DOBO,Đống Đa,Hà Nội,Việt Nam,131321138,ntgptit@gmail.com7,google.com.vn,VISA,1,1,17,INIT,INIT,1,INIT,INIT,2003-01-01 00:00:00,2003-01-01 00:00:00
+8,CÔNG TY TNHH XNK TỔNG HỢP KIM NGÂN ANH,KNA,Đông Anh,Hà Nội,Việt Nam,131321139,ntgptit@gmail.com8,google.com.vn,VISA,2,2,18,INIT,INIT,0,INIT,INIT,2003-01-01 00:00:00,2003-01-01 00:00:00
+9,CÔNG TY CỔ PHẦN XUẤT NHẬP KHẨU MASTER FOOD,MF,Hai Bà Trưng,Hà Nội,Việt Nam,131321140,ntgptit@gmail.com9,google.com.vn,VISA,3,3,19,INIT,INIT,1,INIT,INIT,2003-01-01 00:00:00,2003-01-01 00:00:00
+10,Công ty TNHH THIẾT BỊ ĐIỆN DOBO HÀN QUỐC,FRESHLIFE,Cầu Giấy,Hà Nội,Việt Nam,131321141,ntgptit@gmail.com10,google.com.vn,VISA,1,1,20,INIT,INIT,1,INIT,INIT,2003-01-01 00:00:00,2003-01-01 00:00:00
+11,CÔNG TY TNHH ĐẦU TƯ VÀ DỊCH VỤ THƯƠNG MẠI IVESCOM,IVESCOM,Thanh Xuân,Hà Nội,Việt Nam,131321142,ntgptit@gmail.com11,google.com.vn,VISA,2,2,21,INIT,INIT,1,INIT,INIT,2003-01-01 00:00:00,2003-01-01 00:00:00
+1,CDI VIỆT NAM,CDI,Thanh Xuân,Hà Nội,Việt Nam,131321132,ntgptit@gmail.com1,google.com.vn,VISA,1,1,11,INIT,INIT,1,INIT,INIT,2003-01-01 00:00:00,2003-01-01 00:00:00

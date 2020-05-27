@@ -1,8 +1,8 @@
 package com.giapnt.shoppingcart.postgresql.controller;
 
-import com.giapnt.shoppingcart.postgresql.constant.ContantsForBussines;
+import com.giapnt.shoppingcart.postgresql.constant.AppServiceContants;
 import com.giapnt.shoppingcart.postgresql.model.Category;
-import com.giapnt.shoppingcart.postgresql.services.CategoryServices;
+import com.giapnt.shoppingcart.postgresql.services.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,17 +15,25 @@ import java.util.Map;
 import static java.util.Collections.emptyList;
 import static java.util.Collections.emptyMap;
 
+/**
+ * The Class CategoryController.
+ *
+ * @author GiapNT
+ */
 @RestController
 @CrossOrigin(maxAge = 3600)
 @RequestMapping("/rest")
 public class CategoryController {
-    /**
-     *
-     */
-    @Autowired
-    private CategoryServices categoryServices;
 
     /**
+     * The category service.
+     */
+    @Autowired
+    private CategoryService categoryService;
+
+    /**
+     * Gets the all category.
+     *
      * @return result
      */
     @GetMapping(value = "/all-category")
@@ -33,7 +41,7 @@ public class CategoryController {
         ResponseEntity<Object> result = null;
         List<Category> categories;
         try {
-            categories = categoryServices.getAllListCategory();
+            categories = categoryService.getAllListCategory();
             if (categories != null && !categories.isEmpty()) {
                 result = new ResponseEntity<>(categories, HttpStatus.OK);
             }
@@ -47,6 +55,8 @@ public class CategoryController {
     }
 
     /**
+     * Modify category infomation.
+     *
      * @param category category
      * @return result
      */
@@ -55,12 +65,12 @@ public class CategoryController {
         ResponseEntity<Object> result = null;
         Map<Integer, Object> mapCategoryModify;
         try {
-            mapCategoryModify = categoryServices.modifyCategoryByPrimaryKey(category);
+            mapCategoryModify = categoryService.modifyCategoryByPrimaryKey(category);
             for (Map.Entry<Integer, Object> entry : mapCategoryModify.entrySet())
-                if (entry.getKey() == ContantsForBussines.DATA_NOT_MODIFIED) {
+                if (entry.getKey() == AppServiceContants.DATA_NOT_MODIFIED) {
                     result = new ResponseEntity<>(mapCategoryModify, HttpStatus.NOT_MODIFIED);
                     break;
-                } else if (entry.getKey() == ContantsForBussines.DUPLICATE_NAME) {
+                } else if (entry.getKey() == AppServiceContants.DUPLICATE_NAME) {
                     result = new ResponseEntity<>(mapCategoryModify, HttpStatus.CONFLICT);
                     break;
                 } else {
@@ -77,6 +87,8 @@ public class CategoryController {
     }
 
     /**
+     * Creates the new category.
+     *
      * @param category category
      * @return result
      */
@@ -85,12 +97,12 @@ public class CategoryController {
         ResponseEntity<Object> result = null;
         Map<Integer, Object> mapCategoryCreate;
         try {
-            mapCategoryCreate = categoryServices.addNewCategory(category);
+            mapCategoryCreate = categoryService.addNewCategory(category);
             for (Map.Entry<Integer, Object> entry : mapCategoryCreate.entrySet())
-                if (entry.getKey() == ContantsForBussines.DATA_NOT_MODIFIED) {
+                if (entry.getKey() == AppServiceContants.DATA_NOT_MODIFIED) {
                     result = new ResponseEntity<>(mapCategoryCreate, HttpStatus.NOT_MODIFIED);
                     break;
-                } else if (entry.getKey() == ContantsForBussines.DUPLICATE_NAME) {
+                } else if (entry.getKey() == AppServiceContants.DUPLICATE_NAME) {
                     result = new ResponseEntity<>(mapCategoryCreate, HttpStatus.CONFLICT);
                     break;
                 } else {
@@ -107,6 +119,8 @@ public class CategoryController {
     }
 
     /**
+     * Removes the category.
+     *
      * @param category category
      * @return result
      */
@@ -115,9 +129,9 @@ public class CategoryController {
         ResponseEntity<Object> result = null;
         Map<Integer, Object> mapCategory;
         try {
-            mapCategory = categoryServices.removeCategory(category);
+            mapCategory = categoryService.removeCategory(category);
             for (Map.Entry<Integer, Object> entry : mapCategory.entrySet())
-                if (entry.getKey() == ContantsForBussines.DATA_NOT_MODIFIED) {
+                if (entry.getKey() == AppServiceContants.DATA_NOT_MODIFIED) {
                     result = new ResponseEntity<>(mapCategory, HttpStatus.NOT_MODIFIED);
                     break;
                 } else {
