@@ -14,5 +14,11 @@ import java.util.List;
 @Service
 @Transactional
 public interface PaymentService {
+
+    /**
+     * Gets the all list payments.
+     *
+     * @return the all list payments
+     */
     List<Payment> getAllListPayments();
 }

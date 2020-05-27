@@ -4,19 +4,20 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * @author GiapNT
+ * The Class Main.
  *
+ * @author GiapNT
  */
 @SpringBootApplication
 public class Main {
 
-	/**
-	 * Main.
-	 *
-	 * @param args the arguments
-	 */
-	public static void main(String[] args) {
-		SpringApplication.run(Main.class, args);
+    /**
+     * Main.
+     *
+     * @param args the arguments
+     */
+    public static void main(String[] args) {
+        SpringApplication.run(Main.class, args);
 
-	}
+    }
 }

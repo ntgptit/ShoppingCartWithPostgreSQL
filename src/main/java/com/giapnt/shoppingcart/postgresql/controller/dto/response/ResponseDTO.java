@@ -3,40 +3,26 @@ package com.giapnt.shoppingcart.postgresql.controller.dto.response;
 import lombok.Data;
 
 /**
- * @author GiapNT
+ * The Class ResponseDTO.
  *
+ * @author GiapNT
  */
 @Data
 public class ResponseDTO {
 
-	/**
-	 * 
-	 */
-	private String status;
-	/**
-	 * 
-	 */
-	private String statusMessageContent;
+    /**
+     * The status.
+     */
+    private String status;
 
-	/**
-	 * 
-	 */
-	private String developerMessageContent;
+    /**
+     * The status message content.
+     */
+    private String statusMessageContent;
 
-	/**
-	 * 
-	 */
-	public ResponseDTO() {
-		super();
-	}
-
-	/**
-	 * @param string
-	 * @param message
-	 * @param devMessage
-	 */
-	public ResponseDTO(String status, String statusMessageContent, String developerMessageContent) {
-		// TODO Auto-generated constructor stub
-	}
+    /**
+     * The developer message content.
+     */
+    private String developerMessageContent;
 
 }

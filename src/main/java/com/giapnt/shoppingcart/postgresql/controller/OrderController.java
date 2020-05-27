@@ -15,11 +15,17 @@ import java.util.Map;
 import static java.util.Collections.emptyList;
 import static java.util.Collections.emptyMap;
 
+/**
+ * The Class OrderController.
+ *
+ * @author GiapNT
+ */
 @RestController
 @RequestMapping("/rest")
 public class OrderController {
+
     /**
-     *
+     * The order service.
      */
     @Autowired
     private OrderService orderService;
@@ -48,6 +54,8 @@ public class OrderController {
     }
 
     /**
+     * Modify order infomation.
+     *
      * @param order order
      * @return result
      */
@@ -78,6 +86,8 @@ public class OrderController {
     }
 
     /**
+     * Creates the new orders.
+     *
      * @param order order
      * @return result
      */
@@ -108,6 +118,8 @@ public class OrderController {
     }
 
     /**
+     * Removes the orders.
+     *
      * @param order order
      * @return result
      */

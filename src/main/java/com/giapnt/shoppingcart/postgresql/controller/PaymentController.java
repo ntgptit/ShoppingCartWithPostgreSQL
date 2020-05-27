@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.ArrayList;
 import java.util.List;
 
-// TODO: Auto-generated Javadoc
 /**
  * The Class PaymentController.
  *
@@ -24,21 +23,23 @@ import java.util.List;
 @RequestMapping("/rest")
 public class PaymentController {
 
-	/** The payment service. */
-	@Autowired
-	private PaymentService paymentService;
+    /**
+     * The payment service.
+     */
+    @Autowired
+    private PaymentService paymentService;
 
-	/**
-	 * Gets the all list payments.
-	 *
-	 * @return the all list payments
-	 */
-	@GetMapping(value = "/list-all-payments")
-	public ResponseEntity<Object> getAllListPayments() {
+    /**
+     * Gets the all list payments.
+     *
+     * @return the all list payments
+     */
+    @GetMapping(value = "/list-all-payments")
+    public ResponseEntity<Object> getAllListPayments() {
 
-		List<Payment> payments = new ArrayList<>();
-		payments = paymentService.getAllListPayments();
-		return new ResponseEntity<Object>(payments, HttpStatus.OK);
-	}
+        List<Payment> payments = new ArrayList<>();
+        payments = paymentService.getAllListPayments();
+        return new ResponseEntity<Object>(payments, HttpStatus.OK);
+    }
 
 }

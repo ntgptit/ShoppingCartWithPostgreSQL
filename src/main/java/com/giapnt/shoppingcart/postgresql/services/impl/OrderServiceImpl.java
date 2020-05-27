@@ -14,21 +14,29 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * The Class OrderServiceImpl.
+ *
+ * @author GiapNT
+ */
 @Service("OrderService")
 @Transactional
 public class OrderServiceImpl implements OrderService {
+
     /**
-     *
+     * The Constant logger.
      */
     private static final Logger logger = LoggerFactory.getLogger(OrderServiceImpl.class);
 
     /**
-     *
+     * The order mapper.
      */
     @Autowired
     private OrderMapper orderMapper;
 
     /**
+     * Gets the all list order.
+     *
      * @return orders
      */
     @Override
@@ -44,6 +52,8 @@ public class OrderServiceImpl implements OrderService {
     }
 
     /**
+     * Gets the order by primary key.
+     *
      * @param id Input from UI
      * @return orders
      */
@@ -60,6 +70,8 @@ public class OrderServiceImpl implements OrderService {
     }
 
     /**
+     * Modify order by primary key.
+     *
      * @param order Input from UI
      * @return result
      */
@@ -86,6 +98,8 @@ public class OrderServiceImpl implements OrderService {
     }
 
     /**
+     * Adds the new order.
+     *
      * @param order Input From UI
      * @return result
      */
@@ -112,6 +126,8 @@ public class OrderServiceImpl implements OrderService {
     }
 
     /**
+     * Removes the order.
+     *
      * @param order Input From UI
      * @return result
      */

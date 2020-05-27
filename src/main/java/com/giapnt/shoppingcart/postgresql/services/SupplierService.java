@@ -1,11 +1,10 @@
 package com.giapnt.shoppingcart.postgresql.services;
 
-import java.util.List;
-
+import com.giapnt.shoppingcart.postgresql.model.Supplier;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.giapnt.shoppingcart.postgresql.model.Supplier;
+import java.util.List;
 
 /**
  * The Interface SupplierService.
@@ -17,36 +16,48 @@ import com.giapnt.shoppingcart.postgresql.model.Supplier;
 public interface SupplierService {
 
     /**
-     * @return
+     * Gets the all list suppliers.
+     *
+     * @return the all list suppliers
      */
     List<Supplier> getAllListSuppliers();
 
     /**
-     * @return
+     * Gets the list suppliers active.
+     *
+     * @return the list suppliers active
      */
     List<Supplier> getListSuppliersActive();
 
     /**
-     * @return
+     * Gets the list suppliers deactivate.
+     *
+     * @return the list suppliers deactivate
      */
     List<Supplier> getListSuppliersDeactivate();
 
     /**
-     * @param id
-     * @return
+     * Gets the suppliers by id.
+     *
+     * @param id the id
+     * @return the suppliers by id
      */
     Supplier getSuppliersById(String id);
 
     /**
-     * @param supplier
-     * @return
+     * Modify suppliers by primary key.
+     *
+     * @param supplier the supplier
+     * @return the integer
      */
     Integer modifySuppliersByPrimaryKey(Supplier supplier);
 
     /**
-     * @param supplier
-     * @param action
-     * @return
+     * Update current status by primary key.
+     *
+     * @param supplier the supplier
+     * @param action   the action
+     * @return the integer
      */
     Integer updateCurrentStatusByPrimaryKey(Supplier supplier, int action);
 

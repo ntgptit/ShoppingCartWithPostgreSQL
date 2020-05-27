@@ -17,31 +17,41 @@ import java.util.Map;
 public interface OrderService {
 
     /**
-     * @return
+     * Gets the all list order.
+     *
+     * @return the all list order
      */
     List<Order> getAllListOrder();
 
     /**
-     * @param id
-     * @return
+     * Gets the order by primary key.
+     *
+     * @param id the id
+     * @return the order by primary key
      */
     Order getOrderByPrimaryKey(long id);
 
     /**
-     * @param order
-     * @return
+     * Modify order by primary key.
+     *
+     * @param order the order
+     * @return the map
      */
     Map<Integer, Object> modifyOrderByPrimaryKey(Order order);
 
     /**
-     * @param order
-     * @return
+     * Adds the new order.
+     *
+     * @param order the order
+     * @return the map
      */
     Map<Integer, Object> addNewOrder(Order order);
 
     /**
-     * @param order
-     * @return
+     * Removes the order.
+     *
+     * @param order the order
+     * @return the map
      */
     Map<Integer, Object> removeOrder(Order order);
 }

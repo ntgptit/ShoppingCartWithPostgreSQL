@@ -1,24 +1,32 @@
-/**
- * 
- */
 package com.giapnt.shoppingcart.postgresql.controller.dto.response;
 
-import java.util.List;
-
 import com.giapnt.shoppingcart.postgresql.model.Payment;
-
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
+import java.util.List;
+
 /**
- * @author GiapNT
+ * The Class PaymentResponseDTO.
  *
+ * @author GiapNT
+ */
+
+/**
+ * Instantiates a new payment response DTO.
  */
 @Data
-@EqualsAndHashCode(callSuper=false)
+
+/**
+ * Hash code.
+ *
+ * @return the int
+ */
+@EqualsAndHashCode(callSuper = false)
 public class PaymentResponseDTO extends ResponseDTO {
-	/**
-	 * List of payment
-	 */
-	List<Payment> payments;
+
+    /**
+     * List of payment.
+     */
+    List<Payment> payments;
 }
