@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@Service("OrderServices")
+@Service("OrderService")
 @Transactional
 public class OrderServiceImpl implements OrderService {
     /**

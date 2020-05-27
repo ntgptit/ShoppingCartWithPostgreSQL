@@ -7,6 +7,11 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * The Interface OrderService.
+ *
+ * @author GiapNT
+ */
 @Service
 @Transactional
 public interface OrderService {

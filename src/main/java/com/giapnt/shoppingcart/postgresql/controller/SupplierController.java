@@ -20,6 +20,10 @@ import com.giapnt.shoppingcart.postgresql.services.SupplierService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 
+/**
+ * @author GiapNT
+ *
+ */
 @RestController
 @CrossOrigin(maxAge = 3600)
 @RequestMapping("/rest")
@@ -52,6 +56,12 @@ public class SupplierController {
 		return supplierResponseDTO;
 	}
 
+	/**
+	 * Gets the suppliers by id.
+	 *
+	 * @param id the id
+	 * @return the suppliers by id
+	 */
 	@GetMapping(value = "/supplier-with-id/{id}")
 	public SupplierResponseDTO getSuppliersById(@PathVariable(value = "id") @Valid String id) {
 		// Initialize initial value

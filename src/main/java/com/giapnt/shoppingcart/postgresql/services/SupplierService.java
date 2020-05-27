@@ -7,6 +7,11 @@ import org.springframework.transaction.annotation.Transactional;
 
 import com.giapnt.shoppingcart.postgresql.model.Supplier;
 
+/**
+ * The Interface SupplierService.
+ *
+ * @author GiapNT
+ */
 @Service
 @Transactional
 public interface SupplierService {

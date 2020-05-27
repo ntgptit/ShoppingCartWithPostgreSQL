@@ -13,22 +13,32 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.ArrayList;
 import java.util.List;
 
+// TODO: Auto-generated Javadoc
+/**
+ * The Class PaymentController.
+ *
+ * @author GiapNT
+ */
 @RestController
 @CrossOrigin(maxAge = 3600)
 @RequestMapping("/rest")
 public class PaymentController {
-    /**
-     * Payment Service.
-     */
-    @Autowired
-    private PaymentService paymentService;
 
-    @GetMapping(value = "/list-all-payments")
-    public ResponseEntity<Object> getAllListPayments() {
+	/** The payment service. */
+	@Autowired
+	private PaymentService paymentService;
 
-        List<Payment> payments = new ArrayList<>();
-        payments = paymentService.getAllListPayments();
-        return new ResponseEntity<Object>(payments, HttpStatus.OK);
-    }
+	/**
+	 * Gets the all list payments.
+	 *
+	 * @return the all list payments
+	 */
+	@GetMapping(value = "/list-all-payments")
+	public ResponseEntity<Object> getAllListPayments() {
+
+		List<Payment> payments = new ArrayList<>();
+		payments = paymentService.getAllListPayments();
+		return new ResponseEntity<Object>(payments, HttpStatus.OK);
+	}
 
 }

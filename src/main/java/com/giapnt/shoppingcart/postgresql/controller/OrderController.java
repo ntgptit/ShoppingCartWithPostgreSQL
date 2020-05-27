@@ -25,6 +25,8 @@ public class OrderController {
     private OrderService orderService;
 
     /**
+     * Gets the all order.
+     *
      * @return result
      */
     @GetMapping(value = "/all-order")

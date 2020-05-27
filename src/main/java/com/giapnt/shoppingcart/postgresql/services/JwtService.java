@@ -13,6 +13,11 @@ import com.nimbusds.jose.crypto.MACVerifier;
 import com.nimbusds.jwt.JWTClaimsSet;
 import com.nimbusds.jwt.SignedJWT;
 
+/**
+ * The Class JwtService.
+ *
+ * @author GiapNT
+ */
 @Service
 public class JwtService {
 

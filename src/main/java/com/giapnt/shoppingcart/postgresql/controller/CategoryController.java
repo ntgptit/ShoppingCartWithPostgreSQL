@@ -1,31 +1,44 @@
 package com.giapnt.shoppingcart.postgresql.controller;
 
-import com.giapnt.shoppingcart.postgresql.constant.AppServiceContants;
-import com.giapnt.shoppingcart.postgresql.model.Category;
-import com.giapnt.shoppingcart.postgresql.services.CategoryService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
-
-import javax.validation.Valid;
-import java.util.List;
-import java.util.Map;
-
 import static java.util.Collections.emptyList;
 import static java.util.Collections.emptyMap;
 
+import java.util.List;
+import java.util.Map;
+
+import javax.validation.Valid;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.giapnt.shoppingcart.postgresql.constant.AppServiceContants;
+import com.giapnt.shoppingcart.postgresql.model.Category;
+import com.giapnt.shoppingcart.postgresql.services.CategoryService;
+
+/**
+ * The Class CategoryController.
+ *
+ * @author GiapNT
+ */
 @RestController
 @CrossOrigin(maxAge = 3600)
 @RequestMapping("/rest")
 public class CategoryController {
-    /**
-     *
-     */
+    
+    /** The category service. */
     @Autowired
     private CategoryService categoryService;
 
     /**
+     * Gets the all category.
+     *
      * @return result
      */
     @GetMapping(value = "/all-category")
@@ -47,6 +60,8 @@ public class CategoryController {
     }
 
     /**
+     * Modify category infomation.
+     *
      * @param category category
      * @return result
      */
@@ -77,6 +92,8 @@ public class CategoryController {
     }
 
     /**
+     * Creates the new category.
+     *
      * @param category category
      * @return result
      */
@@ -107,6 +124,8 @@ public class CategoryController {
     }
 
     /**
+     * Removes the category.
+     *
      * @param category category
      * @return result
      */

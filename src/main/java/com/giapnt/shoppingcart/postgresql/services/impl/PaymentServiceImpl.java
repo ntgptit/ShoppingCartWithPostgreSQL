@@ -14,7 +14,7 @@ import lombok.Data;
 
 @Data
 @Transactional
-@Service("PaymentServices")
+@Service("PaymentService")
 public class PaymentServiceImpl implements PaymentService {
 
 

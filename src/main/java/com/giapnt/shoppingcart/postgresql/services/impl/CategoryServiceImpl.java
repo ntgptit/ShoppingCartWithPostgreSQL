@@ -13,7 +13,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-@Service("CategoryServices")
+@Service("CategoryService")
 @Transactional
 public class CategoryServiceImpl implements CategoryService {
     /**

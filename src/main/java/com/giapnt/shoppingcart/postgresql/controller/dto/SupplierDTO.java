@@ -1,8 +1,9 @@
 package com.giapnt.shoppingcart.postgresql.controller.dto;
 
 /**
- * @author GiapNT
+ * The Class SupplierDTO.
  *
+ * @author GiapNT
  */
 public class SupplierDTO {
 
