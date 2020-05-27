@@ -68,6 +68,6 @@ public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionH
 		final String message = ex.getMessage() == null ? ex.getClass().getSimpleName() : ex.getMessage();
 		final String devMessage = ex.getClass().getSimpleName();
 
-		return new ResponseDTO(httpStatus.name(), message, devMessage);
+		return null;
 	}
 }
