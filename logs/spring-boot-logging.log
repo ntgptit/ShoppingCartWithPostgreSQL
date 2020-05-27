@@ -179,3 +179,22 @@
 2020-05-28 00:00:37.769 DEBUG 10608 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'userRoleMapper'.
 2020-05-28 00:00:37.845  INFO 10608 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
 2020-05-28 00:00:37.845  INFO 10608 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-05-28 00:00:37.854  INFO 10608 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-28 00:00:37.854 DEBUG 10608 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-05-28 00:00:37.854  INFO 10608 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 246 ms
+2020-05-28 00:00:38.079 DEBUG 10608 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\CategoryMapper.xml]'
+2020-05-28 00:00:38.085 DEBUG 10608 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\OrderMapper.xml]'
+2020-05-28 00:00:38.089 DEBUG 10608 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\PaymentMapper.xml]'
+2020-05-28 00:00:38.092 DEBUG 10608 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\ProductMapper.xml]'
+2020-05-28 00:00:38.095 DEBUG 10608 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\RoleMapper.xml]'
+2020-05-28 00:00:38.099 DEBUG 10608 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\ShipperMapper.xml]'
+2020-05-28 00:00:38.102 DEBUG 10608 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\SupplierMapper.xml]'
+2020-05-28 00:00:38.106 DEBUG 10608 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\UserMapper.xml]'
+2020-05-28 00:00:38.117 DEBUG 10608 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\UserRoleMapper.xml]'
+2020-05-28 00:00:38.165 DEBUG 10608 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-05-28 00:00:38.180 DEBUG 10608 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-05-28 00:00:38.185 DEBUG 10608 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 13 mappings in 'requestMappingHandlerMapping'
+2020-05-28 00:00:38.190 DEBUG 10608 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-05-28 00:00:38.192 DEBUG 10608 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-05-28 00:00:38.197  WARN 10608 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-05-28 00:00:38.233  INFO 10608 --- [restartedMain] com.giapnt.shoppingcart.postgresql.Main  : Started Main in 0.643 seconds (JVM running for 185.783)
