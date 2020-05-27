@@ -6348,3 +6348,291 @@
 2020-05-27 23:37:52.095 DEBUG 12240 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
 2020-05-27 23:37:52.099  WARN 12240 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
 2020-05-27 23:37:52.138  INFO 12240 --- [restartedMain] com.giapnt.shoppingcart.postgresql.Main  : Started Main in 0.833 seconds (JVM running for 1842.521)
+2020-05-27 23:40:41.628  INFO 12240 --- [restartedMain] com.giapnt.shoppingcart.postgresql.Main  : Starting Main on Minato with PID 12240 (C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes started by GiapNT in C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL)
+2020-05-27 23:40:41.628  INFO 12240 --- [restartedMain] com.giapnt.shoppingcart.postgresql.Main  : No active profile set, falling back to default profiles: default
+2020-05-27 23:40:41.807 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\CategoryMapper.class]
+2020-05-27 23:40:41.807 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\PaymentMapper.class]
+2020-05-27 23:40:41.808 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\RoleMapper.class]
+2020-05-27 23:40:41.808 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\ShippersMapper.class]
+2020-05-27 23:40:41.808 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\UserRoleMapper.class]
+2020-05-27 23:40:41.808 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'categoryMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.CategoryMapper' mapperInterface
+2020-05-27 23:40:41.808 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'categoryMapper'.
+2020-05-27 23:40:41.808 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'paymentMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.PaymentMapper' mapperInterface
+2020-05-27 23:40:41.808 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'paymentMapper'.
+2020-05-27 23:40:41.808 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'roleMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.RoleMapper' mapperInterface
+2020-05-27 23:40:41.808 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'roleMapper'.
+2020-05-27 23:40:41.808 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'shippersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.ShippersMapper' mapperInterface
+2020-05-27 23:40:41.808 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'shippersMapper'.
+2020-05-27 23:40:41.808 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userRoleMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.UserRoleMapper' mapperInterface
+2020-05-27 23:40:41.808 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'userRoleMapper'.
+2020-05-27 23:40:41.871  INFO 12240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-27 23:40:41.871  INFO 12240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-05-27 23:40:41.880  INFO 12240 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-05-27 23:40:41.881 DEBUG 12240 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-05-27 23:40:41.881  INFO 12240 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 252 ms
+2020-05-27 23:40:41.916  WARN 12240 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'categoryController' defined in file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\controller\CategoryController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.giapnt.shoppingcart.postgresql.controller.CategoryController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@178af27b]
+2020-05-27 23:40:41.917  INFO 12240 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-05-27 23:40:41.928 ERROR 12240 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'categoryController' defined in file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\controller\CategoryController.class]: Post-processing of merged bean definition failed; nested exception is java.lang.IllegalStateException: Failed to introspect Class [com.giapnt.shoppingcart.postgresql.controller.CategoryController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@178af27b]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:570) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at com.giapnt.shoppingcart.postgresql.Main.main(Main.java:20) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_241]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.giapnt.shoppingcart.postgresql.controller.CategoryController] from ClassLoader [org.springframework.boot.devtools.restart.classloader.RestartClassLoader@178af27b]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:760) ~[spring-core-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.util.ReflectionUtils.doWithLocalFields(ReflectionUtils.java:692) ~[spring-core-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.buildResourceMetadata(CommonAnnotationBeanPostProcessor.java:365) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.findResourceMetadata(CommonAnnotationBeanPostProcessor.java:350) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessMergedBeanDefinition(CommonAnnotationBeanPostProcessor.java:298) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyMergedBeanDefinitionPostProcessors(AbstractAutowireCapableBeanFactory.java:1077) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:567) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	... 20 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: Lcom/giapnt/shoppingcart/postgresql/services/CategoryService;
+	at java.lang.Class.getDeclaredFields0(Native Method) ~[na:1.8.0_241]
+	at java.lang.Class.privateGetDeclaredFields(Class.java:2583) ~[na:1.8.0_241]
+	at java.lang.Class.getDeclaredFields(Class.java:1916) ~[na:1.8.0_241]
+	at org.springframework.util.ReflectionUtils.getDeclaredFields(ReflectionUtils.java:755) ~[spring-core-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	... 26 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.giapnt.shoppingcart.postgresql.services.CategoryService
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:382) ~[na:1.8.0_241]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:418) ~[na:1.8.0_241]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:355) ~[na:1.8.0_241]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351) ~[na:1.8.0_241]
+	at org.springframework.boot.devtools.restart.classloader.RestartClassLoader.loadClass(RestartClassLoader.java:144) ~[spring-boot-devtools-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:351) ~[na:1.8.0_241]
+	... 30 common frames omitted
+
+2020-05-27 23:43:54.529  INFO 12240 --- [restartedMain] com.giapnt.shoppingcart.postgresql.Main  : Starting Main on Minato with PID 12240 (C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes started by GiapNT in C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL)
+2020-05-27 23:43:54.529  INFO 12240 --- [restartedMain] com.giapnt.shoppingcart.postgresql.Main  : No active profile set, falling back to default profiles: default
+2020-05-27 23:43:54.699 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\CategoryMapper.class]
+2020-05-27 23:43:54.699 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\PaymentMapper.class]
+2020-05-27 23:43:54.699 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\RoleMapper.class]
+2020-05-27 23:43:54.699 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\ShippersMapper.class]
+2020-05-27 23:43:54.699 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\UserRoleMapper.class]
+2020-05-27 23:43:54.699 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'categoryMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.CategoryMapper' mapperInterface
+2020-05-27 23:43:54.699 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'categoryMapper'.
+2020-05-27 23:43:54.699 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'paymentMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.PaymentMapper' mapperInterface
+2020-05-27 23:43:54.699 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'paymentMapper'.
+2020-05-27 23:43:54.699 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'roleMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.RoleMapper' mapperInterface
+2020-05-27 23:43:54.699 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'roleMapper'.
+2020-05-27 23:43:54.699 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'shippersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.ShippersMapper' mapperInterface
+2020-05-27 23:43:54.699 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'shippersMapper'.
+2020-05-27 23:43:54.699 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userRoleMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.UserRoleMapper' mapperInterface
+2020-05-27 23:43:54.699 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'userRoleMapper'.
+2020-05-27 23:43:54.765  INFO 12240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-27 23:43:54.765  INFO 12240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-05-27 23:43:54.775  INFO 12240 --- [restartedMain] o.a.c.c.C.[Tomcat-1].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-05-27 23:43:54.775 DEBUG 12240 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-05-27 23:43:54.775  INFO 12240 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 245 ms
+2020-05-27 23:43:54.815  WARN 12240 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'categoryController' defined in file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\controller\CategoryController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.giapnt.shoppingcart.postgresql.controller.CategoryController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.giapnt.shoppingcart.postgresql.constant cannot be resolved
+	The import com.giapnt.shoppingcart.postgresql.services.CategoryService cannot be resolved
+	CategoryService cannot be resolved to a type
+	CategoryService cannot be resolved to a type
+	CategoryService cannot be resolved to a type
+	AppServiceContants cannot be resolved to a variable
+	AppServiceContants cannot be resolved to a variable
+	CategoryService cannot be resolved to a type
+	AppServiceContants cannot be resolved to a variable
+	AppServiceContants cannot be resolved to a variable
+	CategoryService cannot be resolved to a type
+	AppServiceContants cannot be resolved to a variable
+
+2020-05-27 23:43:54.815  INFO 12240 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2020-05-27 23:43:54.820 ERROR 12240 --- [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'categoryController' defined in file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\controller\CategoryController.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.giapnt.shoppingcart.postgresql.controller.CategoryController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.giapnt.shoppingcart.postgresql.constant cannot be resolved
+	The import com.giapnt.shoppingcart.postgresql.services.CategoryService cannot be resolved
+	CategoryService cannot be resolved to a type
+	CategoryService cannot be resolved to a type
+	CategoryService cannot be resolved to a type
+	AppServiceContants cannot be resolved to a variable
+	AppServiceContants cannot be resolved to a variable
+	CategoryService cannot be resolved to a type
+	AppServiceContants cannot be resolved to a variable
+	AppServiceContants cannot be resolved to a variable
+	CategoryService cannot be resolved to a type
+	AppServiceContants cannot be resolved to a variable
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1303) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1197) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:845) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549) ~[spring-context-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204) [spring-boot-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+	at com.giapnt.shoppingcart.postgresql.Main.main(Main.java:19) [classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_241]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_241]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) [spring-boot-devtools-2.1.8.RELEASE.jar:2.1.8.RELEASE]
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.giapnt.shoppingcart.postgresql.controller.CategoryController]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
+	The import com.giapnt.shoppingcart.postgresql.constant cannot be resolved
+	The import com.giapnt.shoppingcart.postgresql.services.CategoryService cannot be resolved
+	CategoryService cannot be resolved to a type
+	CategoryService cannot be resolved to a type
+	CategoryService cannot be resolved to a type
+	AppServiceContants cannot be resolved to a variable
+	AppServiceContants cannot be resolved to a variable
+	CategoryService cannot be resolved to a type
+	AppServiceContants cannot be resolved to a variable
+	AppServiceContants cannot be resolved to a variable
+	CategoryService cannot be resolved to a type
+	AppServiceContants cannot be resolved to a variable
+
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:184) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1295) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	... 22 common frames omitted
+Caused by: java.lang.Error: Unresolved compilation problems: 
+	The import com.giapnt.shoppingcart.postgresql.constant cannot be resolved
+	The import com.giapnt.shoppingcart.postgresql.services.CategoryService cannot be resolved
+	CategoryService cannot be resolved to a type
+	CategoryService cannot be resolved to a type
+	CategoryService cannot be resolved to a type
+	AppServiceContants cannot be resolved to a variable
+	AppServiceContants cannot be resolved to a variable
+	CategoryService cannot be resolved to a type
+	AppServiceContants cannot be resolved to a variable
+	AppServiceContants cannot be resolved to a variable
+	CategoryService cannot be resolved to a type
+	AppServiceContants cannot be resolved to a variable
+
+	at com.giapnt.shoppingcart.postgresql.controller.CategoryController.<init>(CategoryController.java:3) ~[classes/:na]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_241]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_241]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_241]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_241]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:172) ~[spring-beans-5.1.9.RELEASE.jar:5.1.9.RELEASE]
+	... 24 common frames omitted
+
+2020-05-27 23:47:33.675  INFO 12240 --- [restartedMain] com.giapnt.shoppingcart.postgresql.Main  : Starting Main on Minato with PID 12240 (C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes started by GiapNT in C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL)
+2020-05-27 23:47:33.676  INFO 12240 --- [restartedMain] com.giapnt.shoppingcart.postgresql.Main  : No active profile set, falling back to default profiles: default
+2020-05-27 23:47:33.856 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\CategoryMapper.class]
+2020-05-27 23:47:33.856 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\OrderMapper.class]
+2020-05-27 23:47:33.856 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\PaymentMapper.class]
+2020-05-27 23:47:33.856 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\ProductMapper.class]
+2020-05-27 23:47:33.856 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\RoleMapper.class]
+2020-05-27 23:47:33.856 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\ShippersMapper.class]
+2020-05-27 23:47:33.856 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\SupplierMapper.class]
+2020-05-27 23:47:33.856 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\UserMapper.class]
+2020-05-27 23:47:33.856 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\UserRoleMapper.class]
+2020-05-27 23:47:33.856 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'categoryMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.CategoryMapper' mapperInterface
+2020-05-27 23:47:33.856 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'categoryMapper'.
+2020-05-27 23:47:33.856 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'orderMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.OrderMapper' mapperInterface
+2020-05-27 23:47:33.856 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'orderMapper'.
+2020-05-27 23:47:33.856 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'paymentMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.PaymentMapper' mapperInterface
+2020-05-27 23:47:33.856 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'paymentMapper'.
+2020-05-27 23:47:33.856 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'productMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.ProductMapper' mapperInterface
+2020-05-27 23:47:33.856 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'productMapper'.
+2020-05-27 23:47:33.856 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'roleMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.RoleMapper' mapperInterface
+2020-05-27 23:47:33.856 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'roleMapper'.
+2020-05-27 23:47:33.856 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'shippersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.ShippersMapper' mapperInterface
+2020-05-27 23:47:33.856 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'shippersMapper'.
+2020-05-27 23:47:33.856 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'supplierMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.SupplierMapper' mapperInterface
+2020-05-27 23:47:33.856 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'supplierMapper'.
+2020-05-27 23:47:33.856 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.UserMapper' mapperInterface
+2020-05-27 23:47:33.856 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
+2020-05-27 23:47:33.856 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userRoleMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.UserRoleMapper' mapperInterface
+2020-05-27 23:47:33.856 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'userRoleMapper'.
+2020-05-27 23:47:33.917  INFO 12240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-27 23:47:33.917  INFO 12240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-05-27 23:47:33.944  INFO 12240 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-05-27 23:47:33.944 DEBUG 12240 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-05-27 23:47:33.944  INFO 12240 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 267 ms
+2020-05-27 23:47:34.426 DEBUG 12240 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\CategoryMapper.xml]'
+2020-05-27 23:47:34.428 DEBUG 12240 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\OrderMapper.xml]'
+2020-05-27 23:47:34.429 DEBUG 12240 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\PaymentMapper.xml]'
+2020-05-27 23:47:34.431 DEBUG 12240 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\ProductMapper.xml]'
+2020-05-27 23:47:34.433 DEBUG 12240 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\RoleMapper.xml]'
+2020-05-27 23:47:34.435 DEBUG 12240 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\ShipperMapper.xml]'
+2020-05-27 23:47:34.437 DEBUG 12240 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\SupplierMapper.xml]'
+2020-05-27 23:47:34.439 DEBUG 12240 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\UserMapper.xml]'
+2020-05-27 23:47:34.441 DEBUG 12240 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\UserRoleMapper.xml]'
+2020-05-27 23:47:34.470 DEBUG 12240 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-05-27 23:47:34.487 DEBUG 12240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-05-27 23:47:34.492 DEBUG 12240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 13 mappings in 'requestMappingHandlerMapping'
+2020-05-27 23:47:34.497 DEBUG 12240 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-05-27 23:47:34.499 DEBUG 12240 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-05-27 23:47:34.504  WARN 12240 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-05-27 23:47:34.541  INFO 12240 --- [restartedMain] com.giapnt.shoppingcart.postgresql.Main  : Started Main in 0.881 seconds (JVM running for 2424.925)
+2020-05-27 23:48:53.038  INFO 12240 --- [restartedMain] com.giapnt.shoppingcart.postgresql.Main  : Starting Main on Minato with PID 12240 (C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes started by GiapNT in C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL)
+2020-05-27 23:48:53.038  INFO 12240 --- [restartedMain] com.giapnt.shoppingcart.postgresql.Main  : No active profile set, falling back to default profiles: default
+2020-05-27 23:48:53.204 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\CategoryMapper.class]
+2020-05-27 23:48:53.204 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\OrderMapper.class]
+2020-05-27 23:48:53.204 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\PaymentMapper.class]
+2020-05-27 23:48:53.204 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\ProductMapper.class]
+2020-05-27 23:48:53.204 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\RoleMapper.class]
+2020-05-27 23:48:53.204 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\ShippersMapper.class]
+2020-05-27 23:48:53.204 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\SupplierMapper.class]
+2020-05-27 23:48:53.204 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\UserMapper.class]
+2020-05-27 23:48:53.204 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Identified candidate component class: file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\com\giapnt\shoppingcart\postgresql\mapper\UserRoleMapper.class]
+2020-05-27 23:48:53.204 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'categoryMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.CategoryMapper' mapperInterface
+2020-05-27 23:48:53.204 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'categoryMapper'.
+2020-05-27 23:48:53.204 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'orderMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.OrderMapper' mapperInterface
+2020-05-27 23:48:53.204 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'orderMapper'.
+2020-05-27 23:48:53.204 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'paymentMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.PaymentMapper' mapperInterface
+2020-05-27 23:48:53.204 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'paymentMapper'.
+2020-05-27 23:48:53.204 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'productMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.ProductMapper' mapperInterface
+2020-05-27 23:48:53.204 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'productMapper'.
+2020-05-27 23:48:53.204 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'roleMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.RoleMapper' mapperInterface
+2020-05-27 23:48:53.204 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'roleMapper'.
+2020-05-27 23:48:53.204 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'shippersMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.ShippersMapper' mapperInterface
+2020-05-27 23:48:53.204 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'shippersMapper'.
+2020-05-27 23:48:53.204 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'supplierMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.SupplierMapper' mapperInterface
+2020-05-27 23:48:53.204 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'supplierMapper'.
+2020-05-27 23:48:53.204 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.UserMapper' mapperInterface
+2020-05-27 23:48:53.204 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'userMapper'.
+2020-05-27 23:48:53.204 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Creating MapperFactoryBean with name 'userRoleMapper' and 'com.giapnt.shoppingcart.postgresql.mapper.UserRoleMapper' mapperInterface
+2020-05-27 23:48:53.204 DEBUG 12240 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : Enabling autowire by type for MapperFactoryBean with name 'userRoleMapper'.
+2020-05-27 23:48:53.268  INFO 12240 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-05-27 23:48:53.268  INFO 12240 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2020-05-27 23:48:53.277  INFO 12240 --- [restartedMain] o.a.c.c.C.[Tomcat-2].[localhost].[/]     : Initializing Spring embedded WebApplicationContext
+2020-05-27 23:48:53.277 DEBUG 12240 --- [restartedMain] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2020-05-27 23:48:53.277  INFO 12240 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 238 ms
+2020-05-27 23:48:53.739 DEBUG 12240 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\CategoryMapper.xml]'
+2020-05-27 23:48:53.741 DEBUG 12240 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\OrderMapper.xml]'
+2020-05-27 23:48:53.742 DEBUG 12240 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\PaymentMapper.xml]'
+2020-05-27 23:48:53.744 DEBUG 12240 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\ProductMapper.xml]'
+2020-05-27 23:48:53.745 DEBUG 12240 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\RoleMapper.xml]'
+2020-05-27 23:48:53.747 DEBUG 12240 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\ShipperMapper.xml]'
+2020-05-27 23:48:53.749 DEBUG 12240 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\SupplierMapper.xml]'
+2020-05-27 23:48:53.751 DEBUG 12240 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\UserMapper.xml]'
+2020-05-27 23:48:53.752 DEBUG 12240 --- [restartedMain] o.mybatis.spring.SqlSessionFactoryBean   : Parsed mapper file: 'file [C:\GiapNT\Project\MyProject\IntelliJ\ShoppingCartWithPostgreSQL\target\classes\static\mapper\UserRoleMapper.xml]'
+2020-05-27 23:48:53.785 DEBUG 12240 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2020-05-27 23:48:53.803 DEBUG 12240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2020-05-27 23:48:53.808 DEBUG 12240 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 13 mappings in 'requestMappingHandlerMapping'
+2020-05-27 23:48:53.812 DEBUG 12240 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2020-05-27 23:48:53.815 DEBUG 12240 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2020-05-27 23:48:53.819  WARN 12240 --- [restartedMain] ion$DefaultTemplateResolverConfiguration : Cannot find template location: classpath:/templates/ (please add some templates or check your Thymeleaf configuration)
+2020-05-27 23:48:53.857  INFO 12240 --- [restartedMain] com.giapnt.shoppingcart.postgresql.Main  : Started Main in 0.834 seconds (JVM running for 2504.241)
