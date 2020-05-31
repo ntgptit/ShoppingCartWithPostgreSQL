@@ -11,19 +11,17 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
-import com.giapnt.shoppingcart.postgresql.constant.AppServiceContants;
 import com.giapnt.shoppingcart.postgresql.controller.dto.response.ResponseDTO;
 
 /**
- * @author GiapNT
+ * The Class RestResponseEntityExceptionHandler.
  *
+ * @author GiapNT
  */
 @ControllerAdvice
 public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionHandler {
 
-	/**
-	 * 
-	 */
+	/** The Constant logger. */
 	private static final Logger logger = LoggerFactory.getLogger(RestResponseEntityExceptionHandler.class);
 
 	public RestResponseEntityExceptionHandler() {

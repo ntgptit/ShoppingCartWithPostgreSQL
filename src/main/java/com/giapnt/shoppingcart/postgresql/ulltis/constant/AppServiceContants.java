@@ -1,4 +1,4 @@
-package com.giapnt.shoppingcart.postgresql.constant;
+package com.giapnt.shoppingcart.postgresql.ulltis.constant;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

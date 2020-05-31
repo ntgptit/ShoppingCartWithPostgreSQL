@@ -1,13 +1,15 @@
 package com.giapnt.shoppingcart.postgresql.services.impl;
 
-import com.giapnt.shoppingcart.postgresql.constant.AppServiceContants;
-import com.giapnt.shoppingcart.postgresql.mapper.SupplierMapper;
-import com.giapnt.shoppingcart.postgresql.model.Supplier;
-import com.giapnt.shoppingcart.postgresql.services.SupplierService;
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
+import com.giapnt.shoppingcart.postgresql.mapper.SupplierMapper;
+import com.giapnt.shoppingcart.postgresql.model.Supplier;
+import com.giapnt.shoppingcart.postgresql.model.SupplierDynamic;
+import com.giapnt.shoppingcart.postgresql.services.SupplierService;
+import com.giapnt.shoppingcart.postgresql.ulltis.constant.AppServiceContants;
 
 /**
  * The Class SupplierServiceImpl.
@@ -108,4 +110,15 @@ public class SupplierServiceImpl implements SupplierService {
     public Integer removeSuppliers(String id) {
         return supplierMapper.deleteByPrimaryKey(id);
     }
+
+	/**
+	 * Find supplier dynamic.
+	 *
+	 * @param supplier the supplier
+	 * @return the list
+	 */
+	@Override
+	public List<Supplier> findSupplierDynamic(SupplierDynamic supplierDynamic) {
+		return supplierMapper.findSupplierDynamic(supplierDynamic);
+	}
 }

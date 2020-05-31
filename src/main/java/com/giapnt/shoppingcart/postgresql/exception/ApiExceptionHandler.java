@@ -31,7 +31,7 @@ public class ApiExceptionHandler {
     /**
      * NotFoundException will be handled here individually
      */
-    @ExceptionHandler(NotFoundException.class)
+    @ExceptionHandler(ShoppingCartNotFoundException.class)
     @ResponseStatus(value = HttpStatus.NOT_FOUND)
     public ErrorMessage toDoNotFoundException(Exception ex, WebRequest request) {
         return new ErrorMessage(10200, "Object does not found");

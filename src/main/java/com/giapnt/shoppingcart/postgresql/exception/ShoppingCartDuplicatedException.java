@@ -1,28 +1,29 @@
 package com.giapnt.shoppingcart.postgresql.exception;
 
 /**
- * @author GiapNT
+ * The Class ShoppingCartDuplicatedException.
  *
+ * @author GiapNT
  */
 public class ShoppingCartDuplicatedException extends RuntimeException {
 
-	/**
-	 * 
-	 */
+	/** The Constant serialVersionUID. */
 	private static final long serialVersionUID = -3964410146677038139L;
 
 	/**
-	 * 
+	 * Instantiates a new shopping cart duplicated exception.
 	 */
 	public ShoppingCartDuplicatedException() {
 		super();
 	}
 
 	/**
-	 * @param message
-	 * @param cause
-	 * @param enableSuppression
-	 * @param writableStackTrace
+	 * Instantiates a new shopping cart duplicated exception.
+	 *
+	 * @param message the message
+	 * @param cause the cause
+	 * @param enableSuppression the enable suppression
+	 * @param writableStackTrace the writable stack trace
 	 */
 	public ShoppingCartDuplicatedException(String message, Throwable cause, boolean enableSuppression,
 			boolean writableStackTrace) {
@@ -30,22 +31,28 @@ public class ShoppingCartDuplicatedException extends RuntimeException {
 	}
 
 	/**
-	 * @param message
-	 * @param cause
+	 * Instantiates a new shopping cart duplicated exception.
+	 *
+	 * @param message the message
+	 * @param cause the cause
 	 */
 	public ShoppingCartDuplicatedException(String message, Throwable cause) {
 		super(message, cause);
 	}
 
 	/**
-	 * @param message
+	 * Instantiates a new shopping cart duplicated exception.
+	 *
+	 * @param message the message
 	 */
 	public ShoppingCartDuplicatedException(String message) {
 		super(message);
 	}
 
 	/**
-	 * @param cause
+	 * Instantiates a new shopping cart duplicated exception.
+	 *
+	 * @param cause the cause
 	 */
 	public ShoppingCartDuplicatedException(Throwable cause) {
 		super(cause);
