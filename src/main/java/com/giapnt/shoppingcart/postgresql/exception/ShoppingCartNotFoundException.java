@@ -1,8 +1,9 @@
 package com.giapnt.shoppingcart.postgresql.exception;
 
 /**
- * @author GiapNT
+ * The Class ShoppingCartNotFoundException.
  *
+ * @author GiapNT
  */
 public class ShoppingCartNotFoundException extends RuntimeException {
 

@@ -2,11 +2,26 @@ package com.giapnt.shoppingcart.postgresql.exception;
 
 import lombok.Data;
 
+/**
+ * The Class ErrorMessage.
+ *
+ * @author GiapNT
+ */
 @Data
 public class ErrorMessage {
-    private int statusCode;
-    private String message;
-    public ErrorMessage(int i, String localizedMessage) {
-        // TODO Auto-generated constructor stub
-    }
+
+	/** The status code. */
+	private int statusCode;
+
+	/** The message. */
+	private String message;
+
+	/**
+	 * Instantiates a new error message.
+	 *
+	 * @param i                the i
+	 * @param localizedMessage the localized message
+	 */
+	public ErrorMessage(int i, String localizedMessage) {
+	}
 }

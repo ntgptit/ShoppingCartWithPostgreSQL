@@ -1,8 +1,8 @@
 package com.giapnt.shoppingcart.postgresql.mapper;
 
-import com.giapnt.shoppingcart.postgresql.model.UserRole;
-
 import java.util.List;
+
+import com.giapnt.shoppingcart.postgresql.model.UserRole;
 
 public interface UserRoleMapper {
 

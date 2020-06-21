@@ -3,8 +3,6 @@ package com.giapnt.shoppingcart.postgresql.ulltis.constant;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-// TODO: Auto-generated Javadoc
-
 /**
  * The Class AppServiceContants.
  *

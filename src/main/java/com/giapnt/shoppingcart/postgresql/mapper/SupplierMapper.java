@@ -1,9 +1,9 @@
 package com.giapnt.shoppingcart.postgresql.mapper;
 
+import java.util.List;
+
 import com.giapnt.shoppingcart.postgresql.model.Supplier;
 import com.giapnt.shoppingcart.postgresql.model.SupplierDynamic;
-
-import java.util.List;
 
 public interface SupplierMapper {
 

@@ -1,6 +1,5 @@
 package com.giapnt.shoppingcart.postgresql.controller;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.validation.Valid;
@@ -49,10 +48,9 @@ public class SupplierController {
 			@PathVariable(value = "pageSize") @Valid Integer pageSize) {
 		// Initialize initial value
 		SupplierResponseDTO supplierResponseDTO = new SupplierResponseDTO();
-		List<Supplier> suppliers = new ArrayList<>();
 		// Pagging list of supplier
 		PageHelper.startPage(pageNo, pageSize);
-		suppliers = supplierService.getAllListSuppliers();
+		List<Supplier> suppliers = supplierService.getAllListSuppliers();
 		PageInfo<Supplier> pageInfo = new PageInfo<>(suppliers);
 		// Check null or blank list of supplier
 		if (null == suppliers || suppliers.isEmpty()) {
@@ -101,10 +99,9 @@ public class SupplierController {
 			@PathVariable(value = "pageSize") @Valid Integer pageSize, @RequestBody SupplierDynamic supplierDynamic) {
 		// Initialize initial value
 		SupplierResponseDTO supplierResponseDTO = new SupplierResponseDTO();
-		List<Supplier> suppliers = new ArrayList<>();
 		// Pagging list of supplier
 		PageHelper.startPage(pageNo, pageSize);
-		suppliers = supplierService.findSupplierDynamic(supplierDynamic);
+		List<Supplier> suppliers = supplierService.findSupplierDynamic(supplierDynamic);
 		PageInfo<Supplier> pageInfo = new PageInfo<>(suppliers);
 		// Check null or blank list of supplier
 		if (null == suppliers || suppliers.isEmpty()) {

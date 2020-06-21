@@ -3,70 +3,51 @@
         "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
 <generatorConfiguration>
-
 	<classPathEntry
 		location="C:\Users\ntgpt\.m2\repository\org\postgresql\postgresql\42.2.8\postgresql-42.2.8.jar" />
-
 	<context id="context" targetRuntime="MyBatis3Simple">
 		<commentGenerator>
 			<property name="suppressAllComments" value="false" />
 			<property name="suppressDate" value="true" />
 		</commentGenerator>
-
-		<jdbcConnection userId="postgres" password="root"
-			driverClass="org.postgresql.Driver"
+		<jdbcConnection userId="postgres" password="root" driverClass="org.postgresql.Driver"
 			connectionURL="jdbc:postgresql://localhost:5432/shopping-cart" />
-
 		<javaTypeResolver>
 			<property name="forceBigDecimals" value="false" />
 		</javaTypeResolver>
-
-		<javaModelGenerator
-			targetPackage="com.giapnt.shoppingcart.postgresql.model"
-			targetProject="ShoppingCartWithPostgreSQL">
+		<javaModelGenerator targetPackage="com.giapnt.shoppingcart.postgresql.model"
+			targetProject="ShoppingCartWithPostgreSQL"
+		>
 			<property name="enableSubPackages" value="false" />
 			<property name="trimStrings" value="true" />
 		</javaModelGenerator>
-
-		<sqlMapGenerator
-			targetPackage="com.giapnt.shoppingcart.postgresql.sqlXML"
-			targetProject="ShoppingCartWithPostgreSQL">
+		<sqlMapGenerator targetPackage="com.giapnt.shoppingcart.postgresql.sqlXML"
+			targetProject="ShoppingCartWithPostgreSQL"
+		>
 			<property name="enableSubPackages" value="false" />
 		</sqlMapGenerator>
-
-		<javaClientGenerator
-			targetPackage="com.giapnt.shoppingcart.postgresql.mapper"
-			type="XMLMAPPER" targetProject="ShoppingCartWithPostgreSQL">
+		<javaClientGenerator targetPackage="com.giapnt.shoppingcart.postgresql.mapper"
+			type="XMLMAPPER" targetProject="ShoppingCartWithPostgreSQL"
+		>
 			<property name="enableSubPackages" value="false" />
 		</javaClientGenerator>
-
-		<table schema="public" tableName="products"
-			enableCountByExample="false" enableDeleteByExample="false"
+		<table schema="public" tableName="products" enableCountByExample="false" enableDeleteByExample="false"
 			enableSelectByExample="false" enableUpdateByExample="false" />
-		<table schema="public" tableName="category"
-			enableCountByExample="false" enableDeleteByExample="false"
+		<table schema="public" tableName="category" enableCountByExample="false" enableDeleteByExample="false"
 			enableSelectByExample="false" enableUpdateByExample="false" />
-		<table schema="public" tableName="orders"
-			enableCountByExample="false" enableDeleteByExample="false"
+		<table schema="public" tableName="orders" enableCountByExample="false" enableDeleteByExample="false"
 			enableSelectByExample="false" enableUpdateByExample="false" />
-		<table schema="public" tableName="payment"
-			enableCountByExample="false" enableDeleteByExample="false"
+		<table schema="public" tableName="payment" enableCountByExample="false" enableDeleteByExample="false"
 			enableSelectByExample="false" enableUpdateByExample="false" />
-		<table schema="public" tableName="user_role"
-			enableCountByExample="false" enableDeleteByExample="false"
+		<table schema="public" tableName="user_role" enableCountByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" />
+		<table schema="public" tableName="role" enableCountByExample="false" enableDeleteByExample="false"
 			enableSelectByExample="false" enableUpdateByExample="false" />
-		<table schema="public" tableName="role"
-			enableCountByExample="false" enableDeleteByExample="false"
+		<table schema="public" tableName="shippers" enableCountByExample="false" enableDeleteByExample="false"
 			enableSelectByExample="false" enableUpdateByExample="false" />
-		<table schema="public" tableName="shippers"
-			enableCountByExample="false" enableDeleteByExample="false"
+		<table schema="public" tableName="suppliers" enableCountByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false" enableUpdateByExample="false" />
+		<table schema="public" tableName="users" enableCountByExample="false" enableDeleteByExample="false"
 			enableSelectByExample="false" enableUpdateByExample="false" />
-		<table schema="public" tableName="suppliers"
-			enableCountByExample="false" enableDeleteByExample="false"
-			enableSelectByExample="false" enableUpdateByExample="false" />
-		<table schema="public" tableName="users"
-			enableCountByExample="false" enableDeleteByExample="false"
-			enableSelectByExample="false" enableUpdateByExample="false" />
-
 	</context>
 </generatorConfiguration>

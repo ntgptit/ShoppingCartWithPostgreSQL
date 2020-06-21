@@ -7,7 +7,9 @@ package com.giapnt.shoppingcart.postgresql.exception;
  */
 public class ShoppingCartDuplicatedException extends RuntimeException {
 
-	/** The Constant serialVersionUID. */
+	/**
+	 * The Constant serialVersionUID.
+	 */
 	private static final long serialVersionUID = -3964410146677038139L;
 
 	/**
@@ -20,9 +22,9 @@ public class ShoppingCartDuplicatedException extends RuntimeException {
 	/**
 	 * Instantiates a new shopping cart duplicated exception.
 	 *
-	 * @param message the message
-	 * @param cause the cause
-	 * @param enableSuppression the enable suppression
+	 * @param message            the message
+	 * @param cause              the cause
+	 * @param enableSuppression  the enable suppression
 	 * @param writableStackTrace the writable stack trace
 	 */
 	public ShoppingCartDuplicatedException(String message, Throwable cause, boolean enableSuppression,
@@ -34,7 +36,7 @@ public class ShoppingCartDuplicatedException extends RuntimeException {
 	 * Instantiates a new shopping cart duplicated exception.
 	 *
 	 * @param message the message
-	 * @param cause the cause
+	 * @param cause   the cause
 	 */
 	public ShoppingCartDuplicatedException(String message, Throwable cause) {
 		super(message, cause);

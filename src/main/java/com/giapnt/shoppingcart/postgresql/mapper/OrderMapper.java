@@ -1,8 +1,8 @@
 package com.giapnt.shoppingcart.postgresql.mapper;
 
-import com.giapnt.shoppingcart.postgresql.model.Order;
-
 import java.util.List;
+
+import com.giapnt.shoppingcart.postgresql.model.Order;
 
 public interface OrderMapper {
 

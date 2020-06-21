@@ -1,11 +1,9 @@
-/**
- * 
- */
 package com.giapnt.shoppingcart.postgresql.ulltis;
 
 /**
- * @author GiapNT
+ * The Class ShoppingCodeGenerator.
  *
+ * @author GiapNT
  */
 public class ShoppingCodeGenerator {
 
