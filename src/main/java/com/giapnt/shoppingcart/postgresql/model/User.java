@@ -1,8 +1,8 @@
 package com.giapnt.shoppingcart.postgresql.model;
 
-import lombok.Data;
-
 import java.util.Date;
+
+import lombok.Data;
 
 /**
  * The Class User.

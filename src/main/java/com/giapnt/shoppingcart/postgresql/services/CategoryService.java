@@ -1,11 +1,12 @@
 package com.giapnt.shoppingcart.postgresql.services;
 
-import com.giapnt.shoppingcart.postgresql.model.Category;
+import java.util.List;
+import java.util.Map;
+
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.List;
-import java.util.Map;
+import com.giapnt.shoppingcart.postgresql.model.Category;
 
 /**
  * The Interface CategoryService.

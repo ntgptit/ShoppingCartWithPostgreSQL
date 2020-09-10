@@ -1,9 +1,10 @@
 package com.giapnt.shoppingcart.postgresql.controller.dto.response;
 
-import com.giapnt.shoppingcart.postgresql.model.Category;
-import lombok.Data;
-
 import java.util.List;
+
+import com.giapnt.shoppingcart.postgresql.model.Category;
+
+import lombok.Data;
 
 /**
  * The Class CategoryResponseDTO.
